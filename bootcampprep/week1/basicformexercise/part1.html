@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+      body {
+        background-color:lightblue;
+      }
+      form {
+        background-color: white;
+        padding: 10px;
+      }
+      .wufoo {
+        font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+        
+      }
+      p {
+        display: inline;  
+        color: blue;
+      }
+      label {
+        color: orange;
+      }
+      #title {
+        background-color: red;
+        color: white;
+        text-align: center;
+      }
+      div {
+        margin: 10px
+      }
+    </style>
+  </head>
+  <body>
+    <form method="GET" action="simpleform.html" class=".wufoo">
+      <div id="title">SỞ THÍCH CỦA BẠN</div>
+      <div class="textbox">
+        <p>Họ và tên</p>
+        <input type = "text" name="yourname" size="15"/><br/>
+      </div>
+      <div class="textbox">
+        <p>Email</p>
+        <input type = "text" name="email" size="15"/>
+      </div>
+      <div>
+        <p>Sở thích</p>
+        <label><input name="hobby" type="checkbox"/> Thể Thao</label> 
+        <label><input name="hobby" type="checkbox"/> Âm Nhạc</label> 
+        <label><input name="hobby" type="checkbox"/> Đọc Sách</label> <br/>
+        <label><input name="hobby" type="checkbox"/> Lướt Web</label> 
+        <label><input name="hobby" type="checkbox"/> Chơi Game</label> 
+        <label><input name="hobby" type="checkbox"/> Điện Ảnh</label> <br/>
+        <label><input name="hobby" type="checkbox"/> Du lịch</label> 
+      </div>
+
+      <input type = "button" name="btSubmit" value="Gửi thông tin"/>
+      <input type = "button" name="btSubmit" value="Nhập lại"/>
+    </form>
+  </body>
+</html>
