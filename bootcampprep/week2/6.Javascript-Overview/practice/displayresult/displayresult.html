@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>[Thực hành] Hiển thị đầu ra</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    </head>
+  <body>
+    <button type="button" onclick="showMessageAlert();">Click Me! alert()</button>
+    <div id="messageDiv"></div>
+    <button type="button" onclick="showMessageInnerHtml()">Click Me! innerHtml</button>
+    <button type="button" onclick="showMessageWrite();">Click Me! document.write()</button>
+    <button type="button" onclick="showMessageConsole()">Click Me! console.log()</button>
+  </body>
+  <script>
+    function showMessageAlert() {
+      alert('Xin chào! alert');
+    }
+    function showMessageInnerHtml() {
+      document.getElementById("messageDiv").innerHTML = '<strong>Xin chào! innerHtml</strong>';
+    }
+    //document.write() delete all old information
+    //still accept html element
+    function showMessageWrite() {
+      document.write('<strong>Xin chào! write</strong>');
+    }
+    function showMessageConsole() {
+      console.log('Xin Chào!');
+    }
+  </script>
+</html>
