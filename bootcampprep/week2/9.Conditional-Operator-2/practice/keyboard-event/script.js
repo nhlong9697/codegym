@@ -24,6 +24,7 @@ function moveSelection(evt) {
       break;
     case 38:
       upArrowPress();
+      console.log('pressed')
       break;
     case 40:
       downArrowPress();
@@ -34,4 +35,3 @@ function moveSelection(evt) {
 function getReady() {
   window.addEventListener('keydown', moveSelection);
 }
-
