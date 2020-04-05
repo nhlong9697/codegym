@@ -35,3 +35,4 @@ function moveSelection(evt) {
 function getReady() {
   window.addEventListener('keydown', moveSelection);
 }
+
