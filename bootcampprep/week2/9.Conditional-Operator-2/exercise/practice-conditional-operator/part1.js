@@ -37,12 +37,37 @@ function exercise4(a, b, c) {
     alert(c + " is the largest");
   }
 }
-exercise4(1, 2, 3)
+exercise4(1, 2, 3);
 
-function exercise5(testScore,midTermScore,finalScore) {
+function exercise5(testScore, midTermScore, finalScore) {
   let totalScore = (testScore + midTermScore * 2 + finalScore * 3) / 6;
   alert(totalScore);
 }
-exercise5(6, 7, 8)
+exercise5(6, 7, 8);
 
-function exercise6()
+function exercise6(sales) {
+  let commission;
+  if (sales >= 100000000) {
+    commission = sales * 0.1;
+  } else if (sales >= 50000000) {
+    commission = sales * 0.05;
+  } else {
+    commission = sales * 0.01;
+  }
+  alert("commsion is " + commission);
+}
+exercise6(100000000);
+exercise6(50000000);
+exercise6(10000000);
+
+function exercise7(callTime) {
+  let totalBill;
+  if (callTime > 6) {
+    totalBill = callTime * 80;
+  } else {
+    totalBill = 6 * 80 + callTime * 13.33;
+  }
+  alert(totalBill);
+}
+exercise7(6);
+exercise7(10);
