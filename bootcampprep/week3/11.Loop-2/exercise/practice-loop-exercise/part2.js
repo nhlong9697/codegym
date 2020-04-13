@@ -70,7 +70,7 @@ function exercise4() {
   for (let j = 1; j <= height - 2; j++) {
     document.write("*");
     for (let k = 1; k <= width - 2; k++) {
-      document.write("*");
+      document.write("&ensp;");
     }
     document.write("*");
     document.write("<br>");
