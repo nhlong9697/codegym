@@ -1,46 +1,64 @@
-function Phone(battery, mode, phoneNumber) {
-  this.phoneNumber = phoneNumber;
+function Phone(battery, mode, draft, inbox, sent) {
   this.battery = battery;
-  this.inbox = [];
-  this.draft = [];
-  this.sent = [];
   this.mode = mode;
+  this.draft = draft;
+  this.inbox = inbox;
+  this.sent = sent;
 
-  this.changeMode = (mode) => {
-    this.mode = mode;
+  this.changeMode = () => {
+    if (this.mode) {
+      this.mode = false;
+    } else {
+      if (this.battery > 1) {
+        this.mode = true;
+      } else {
+        this.mode = false;
+      }
+    }
   };
+
+  this.useBattery = () => {
+    this.battery--;
+    if (this.battery < 1) {
+      this.mode = false;
+    }
+  };
+
   this.chargeBattery = (energy) => {
     this.battery += energy;
   };
+
   this.writeDraft = (draft) => {
     if (this.mode) {
-      this.draft.push(draft);
-      this.battery--;
+      this.draft += draft;
+      this.useBattery();
     }
   };
-  this.sendMessage = (draft, phoneNumber) => {
-    if (this.mode) {
-      phoneNumber.inbox.push(draft);
-      this.sent.inbox.push(draft);
-      this.battery--;
+
+  this.sendMessage = (phone) => {
+    if (this.mode & Boolean(this.draft) & phone.mode) {
+      phone.inbox.push(this.draft);
+      this.sent.push(this.draft);
+      this.draft = "";
+      this.useBattery();
+      phone.useBattery();
     }
   };
+
   this.viewInbox = () => {
     if (this.mode) {
-      this.battery--;
-      return this.inbox;
+      this.useBattery();
+      console.log(inbox);
     }
   };
+
   this.viewSent = () => {
     if (this.mode) {
-      this.battery--;
-      return this.sent;
+      this.useBattery();
+      console.log(sent);
     }
   };
 }
 
-let apple = Phone(90, true, 1);
-let samsung = Phone(100, false, 2);
-
-apple.sendMessage("test message", 2);
-samsung.viewInbox();
+let apple = new Phone(5, true, "", [], []);
+let samsung = new Phone(0, false, "", [], []);
