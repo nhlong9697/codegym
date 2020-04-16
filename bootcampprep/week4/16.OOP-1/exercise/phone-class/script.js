@@ -9,7 +9,7 @@ function Phone(battery, mode, draft, inbox, sent) {
     if (this.mode) {
       this.mode = false;
     } else {
-      if (this.battery > 1) {
+      if (this.battery > 0) {
         this.mode = true;
       } else {
         this.mode = false;
@@ -30,6 +30,7 @@ function Phone(battery, mode, draft, inbox, sent) {
 
   this.writeDraft = (draft) => {
     if (this.mode) {
+      this.draft = "";
       this.draft += draft;
       this.useBattery();
     }
@@ -48,14 +49,14 @@ function Phone(battery, mode, draft, inbox, sent) {
   this.viewInbox = () => {
     if (this.mode) {
       this.useBattery();
-      console.log(inbox);
+      alert(inbox);
     }
   };
 
   this.viewSent = () => {
     if (this.mode) {
       this.useBattery();
-      console.log(sent);
+      alert(sent);
     }
   };
 }

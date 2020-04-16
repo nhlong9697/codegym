@@ -5,7 +5,22 @@
   <title></title>
 </head>
 <body>
-
-</body>
 <script src="script.js"></script>
+<h1>apple</h1>
+<input id="messageApple" type="text" name="">
+<input type="button" value="Change Mode" onclick="apple.changeMode()">
+<input type="button" value="Charge" onclick="apple.chargeBattery(1)">
+<input type="button" value="Write Draft" onclick='apple.writeDraft(document.getElementById("messageApple").value)'/>
+<input type="button" value="Send Message" onclick="apple.sendMessage(samsung)">
+<input type="button" value="View Inbox" onclick="apple.viewInbox()">
+<input type="button" value="View Sent" onclick="apple.viewSent()">
+<h2>samsung</h2>
+<input id="messageSamsung" type="text" name="">
+<input type="button" value="Change Mode" onclick="samsung.changeMode()">
+<input type="button" value="Charge" onclick="samsung.chargeBattery(1)">
+<input type="button" value="Write Draft" onclick='samsung.writeDraft(document.getElementById("messageSamsung").value)'>
+<input type="button" value="Send Message" onclick="samsung.sendMessage(apple)">
+<input type="button" value="View Inbox" onclick="samsung.viewInbox()">
+<input type="button" value="View Sent" onclick="samsung.viewSent()">
+</body>
 </html>
