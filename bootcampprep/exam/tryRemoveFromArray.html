@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>tryRemoveFromArray</title>
+</head>
+<body>
+<script>
+function tryRemoveFromArray(array, deleteNumber) {
+  let deleteNumbers = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === deleteNumber) {
+      deleteNumbers += 1;
+      array.splice(i, 1);
+      i--;
+    }
+  }
+  if (deleteNumbers > 0) {
+    return true;
+  }
+  return false;
+}
+</script>
+</body>
+</html>

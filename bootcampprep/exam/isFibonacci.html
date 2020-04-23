@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>isFibonacci</title>
+</head>
+<body>
+<script>
+function isFibonacci(number) {
+  if (number == 0 || number == 1) {
+    return true;
+  } else {
+    let fibonacci = 0;
+    let firstNumber = 0;
+    let secondNumber = 1;
+    while (fibonacci <= number) {
+      fibonacci = firstNumber + secondNumber;
+      firstNumber = secondNumber;
+      secondNumber = fibonacci;
+      if (fibonacci == number) {
+        return true;
+      }
+    }
+    return false;
+  }
+}
+</script>
+</body>
+</html>
