@@ -110,18 +110,24 @@ function Car() {
   };
 }
 
-function Board(car) {
+function Board(car, prize, obstacle) {
   this.car = car;
+  this.prize = prize;
+  this.obstacle = obstacle;
   this.ctx = undefined;
   this.start = () => {
     this.ctx = document.getElementById("gameCanvas").getContext("2d");
     this.car.show(this.ctx);
     this.listenEvent();
+    this.prize.show(this.ctx);
+    this.obstacle.show(this.ctx);
   };
 
   this.render = () => {
     this.ctx.clearRect(0, 0, GAMEBOARD_WIDTH, GAMEBOARD_HEIGHT);
     this.car.show(this.ctx);
+    this.prize.show(this.ctx);
+    this.obstacle.show(this.ctx);
   };
 
   this.moveCar = (event) => {
@@ -169,19 +175,25 @@ function Board(car) {
 }
 
 function Prize() {
-  this.xPosition = undefined;
-  this.yPosition = undefined;
+  this.xPosition = Math.floor(
+    Math.random() * (GAMEBOARD_WIDTH - PRIZE_WIDTH + 1)
+  );
+  this.yPosition = Math.floor(
+    Math.random() * (GAMEBOARD_HEIGHT - PRIZE_HEIGHT + 1)
+  );
   this.image = PRIZE_IMAGE;
-  this.show = (ctx) => {
-    let image = new Image();
-    this.xPosition = Math.floor(
-      Math.random() * (GAMEBOARD_WIDTH - PRIZE_WIDTH + 1)
-    );
+  this.reset = () => {
     this.yPosition = Math.floor(
       Math.random() * (GAMEBOARD_HEIGHT - PRIZE_HEIGHT + 1)
     );
+  };
+  this.show = (ctx) => {
+    let image = new Image();
+
     image.src = this.image;
-    image.onload = () => {};
+    image.onload = () => {
+      ctx.drawImage(image, this.xPosition, this.yPosition);
+    };
   };
 }
 
