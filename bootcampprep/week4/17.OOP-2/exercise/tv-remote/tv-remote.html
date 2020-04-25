@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+  let Remote = function(tivi) {
+    this.tivi = tivi;
+
+    this.changeChannel = (channel) => {
+      this.channle = channel;
+      this.tivi.changeChannel(this.channle);
+    }
+
+    this.changeVolumne = (volumne) => {
+      this.volumne = volumne;
+      this.tivi.changeVolumne(this.volumne);
+    }
+
+    this.setOnTivi = () => {
+      this.tivi.turnOn();
+    }
+
+    this.setOffTivi = () => {
+      this.tivi.turnOff();
+    }
+  }
+
+  let Tivi = (channel, volumne) => {
+    this.channel = channel;
+    this.volumne = volumne;
+    this.isOn = true;
+    this.changeChannel = (newChannel) => {
+      this.channel = newChannel;
+    }
+
+    this.changeVolumne = (newVolumne) => {
+      this.volumne += newVolumne;
+    }
+
+    this.turnOn = () =>{
+      this.isOn= true;
+    }
+
+    this.turnOff = () => {
+      this.isOn = false;
+    }
+  }
+
+  let tivi = new Tivi(1,10);
+  let remote = new Remote(tivi);
+
+  remote.changeVolumne(6);
+  remote.changeChannel(9);
+</script>
+</html>
