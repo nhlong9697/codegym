@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+function Rat(name,weight,speed) {
+  this.name = name;
+  this.weight = weight;
+  this.speed = speed;
+  this.status = true;
+  this.speak = (speech) => {
+    console.log(this.name + " say that: " + speech);
+  }
+}
+
+function Cat(name,weight,speed) {
+  this.name = name;
+  this.weight = weight;
+  this.speed = speed;
+  this.speak = (speech) => {
+    console.log(this.name + " say that: " + speech)
+  }
+  this.catchRat = (rat) => {
+    if(this.speed > rat.speed && rat.status === false) {
+      this.eatRat(rat);
+    }
+  }
+  this.eatRat = (rat) => {
+    this.weight += rat.weight;
+  }
+}
+</script>
+</body>
+</html>
