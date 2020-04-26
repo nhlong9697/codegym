@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <input id="textArea" type="text" name="">
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  let defaultArray = ["this is the string"]
+  let arrayLength = defaultArray[0].length;
+  let textArea = $("#textArea")
+  textArea.keydown((event) => {
+    var l = textArea.val().length%arrayLength+1;
+    textArea.val(defaultArray[0].substr(0,l))
+    event.preventDefault();
+  })
+</script>
+</html>
