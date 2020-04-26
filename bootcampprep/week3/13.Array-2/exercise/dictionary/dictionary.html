@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <input id="input" type="text">
+  <input type="button" value="Translate" onclick="translate()">
+</body>
+<script>
+  let english = ["car", "candy", "cat", "dog"]
+  let vietnamese = ["xe", "kẹo", "mèo", "chó"]
+  let input = document.getElementById("input").value;
+  function translate() {
+    for (let i = 0; i < english.length; i++) {
+      if (input === english[i]) {
+        alert(input + "means: " + vietnamese[i]);
+      }
+    }
+  }
+</script>
+</html>
