@@ -10,7 +10,7 @@ public class CheckPrime {
     else {
       int i = 2;
       boolean isPrime = true;
-      while (i < Math.sqrt(number)) {
+      while (i <= Math.sqrt(number)) {
         if (number % i == 0) {
           isPrime = false;
           break;
