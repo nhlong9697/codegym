@@ -29,5 +29,6 @@ public class NPrime {
       }
       potentialPrime += 1;
     }
+    input.close();
   }
 }
