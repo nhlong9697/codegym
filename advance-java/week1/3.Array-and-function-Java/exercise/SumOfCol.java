@@ -27,6 +27,7 @@ public class SumOfCol {
     int sumOfCol = sumOfCol(array,col);
     System.out.println("Sum of " + col + " column is " + sumOfCol);
 
+    input.close();
   }
 
   public static int[][] newArray(int height, int width) {
