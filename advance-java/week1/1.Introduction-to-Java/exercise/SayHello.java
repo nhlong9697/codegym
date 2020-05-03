@@ -6,5 +6,6 @@ public class SayHello {
     System.out.println("Enter your name: ");
     String name = scanner.nextLine();
     System.out.println("Hello : " + name);
+    scanner.close();
   }
 }
