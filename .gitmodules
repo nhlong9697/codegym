@@ -4,3 +4,6 @@
 [submodule "advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-variable-extraction"]
 	path = advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-variable-extraction
 	url = https://github.com/codegym-vn/java-cleancode-refactoring-variable-extraction
+[submodule "advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-method-extraction"]
+	path = advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-method-extraction
+	url = https://github.com/codegym-vn/java-cleancode-refactoring-method-extraction
