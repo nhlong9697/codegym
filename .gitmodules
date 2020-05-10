@@ -7,3 +7,9 @@
 [submodule "advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-method-extraction"]
 	path = advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-method-extraction
 	url = https://github.com/codegym-vn/java-cleancode-refactoring-method-extraction
+[submodule "advance-java/week2/8.Clean-code-and-refactor/exercise/java-cleancode-refactoring-exercise"]
+	path = advance-java/week2/8.Clean-code-and-refactor/exercise/java-cleancode-refactoring-exercise
+	url = https://github.com/codegym-vn/java-cleancode-refactoring-exercise.git
+[submodule "advance-java/week2/9.Automate-testing-and-TDD/practice/junit-simple-calculator"]
+	path = advance-java/week2/9.Automate-testing-and-TDD/practice/junit-simple-calculator
+	url = https://github.com/codegym-vn/junit-simple-calculator
