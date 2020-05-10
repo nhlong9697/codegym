@@ -20,16 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c44b28f9-1c51-4f7e-b0da-abc8284457f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../8.Clean-code-and-refactor/exercise/java-cleancode-refactoring-exercise" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbsoluteNumberCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/AbsoluteNumberCalculatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../junit-simple-calculator" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.gitmodules" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/next-day-calculator/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/next-day-calculator/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/next-day-calculator/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/next-day-calculator/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/next-day-calculator/next-day-calculator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/next-day-calculator/out/production/next-day-calculator/NextDayCalculator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/next-day-calculator/src/NextDayCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/next-day-calculator/test/NextDayCalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../8.Clean-code-and-refactor/exercise/java-cleancode-refactoring-exercise" beforeDir="false" afterPath="$PROJECT_DIR$/../../../8.Clean-code-and-refactor/exercise/java-cleancode-refactoring-exercise" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../8.Clean-code-and-refactor/practice/java-cleancode-refactoring-method-extraction" beforeDir="false" afterPath="$PROJECT_DIR$/../../../8.Clean-code-and-refactor/practice/java-cleancode-refactoring-method-extraction" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../8.Clean-code-and-refactor/practice/java-cleancode-refactoring-renaming" beforeDir="false" afterPath="$PROJECT_DIR$/../../../8.Clean-code-and-refactor/practice/java-cleancode-refactoring-renaming" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../8.Clean-code-and-refactor/practice/java-cleancode-refactoring-variable-extraction" beforeDir="false" afterPath="$PROJECT_DIR$/../../../8.Clean-code-and-refactor/practice/java-cleancode-refactoring-variable-extraction" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../junit-simple-calculator" beforeDir="false" afterPath="$PROJECT_DIR$/../junit-simple-calculator" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,12 +52,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
   </component>
   <component name="ProjectId" id="1bikMsEWfJivFtHXPTEgrvhMr9W" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -63,6 +70,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -98,7 +106,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589122256194</updated>
-      <workItem from="1589122259915" duration="2229000" />
+      <workItem from="1589122259915" duration="3534000" />
+      <workItem from="1589129948040" duration="819000" />
     </task>
     <servers />
   </component>
@@ -115,28 +124,36 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="141" y="55" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589125947891">
+    <state x="141" y="55" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589125966738">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="141" y="55" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.741@0.27.1366.741" timestamp="1589125947891" />
-    <state width="1324" height="178" key="GridCell.Tab.0.bottom" timestamp="1589125920519">
+    <state x="141" y="55" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.741@0.27.1366.741" timestamp="1589125966738" />
+    <state x="460" y="140" width="424" height="506" key="FileChooserDialogImpl" timestamp="1589127418694">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1324" height="178" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1589125920519" />
-    <state width="1324" height="178" key="GridCell.Tab.0.center" timestamp="1589125920512">
+    <state x="460" y="140" width="424" height="506" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1589127418694" />
+    <state width="1324" height="178" key="GridCell.Tab.0.bottom" timestamp="1589127437212">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1324" height="178" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1589125920512" />
-    <state width="1324" height="178" key="GridCell.Tab.0.left" timestamp="1589125920510">
+    <state width="1324" height="178" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1589127437212" />
+    <state width="1324" height="178" key="GridCell.Tab.0.center" timestamp="1589127437211">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1324" height="178" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1589125920510" />
-    <state width="1324" height="178" key="GridCell.Tab.0.right" timestamp="1589125920513">
+    <state width="1324" height="178" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1589127437211" />
+    <state width="1324" height="178" key="GridCell.Tab.0.left" timestamp="1589127437209">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1324" height="178" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1589125920513" />
+    <state width="1324" height="178" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1589127437209" />
+    <state width="1324" height="178" key="GridCell.Tab.0.right" timestamp="1589127437212">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1324" height="178" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1589127437212" />
     <state x="401" y="291" width="545" height="204" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1589122460681">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -145,5 +162,9 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="457" y="209" width="442" height="373" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.27.1366.741@0.27.1366.741" timestamp="1589122480078" />
+    <state x="98" y="27" width="1159" height="737" key="new project wizard" timestamp="1589127435387">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="98" y="27" width="1159" height="737" key="new project wizard/0.27.1366.741@0.27.1366.741" timestamp="1589127435387" />
   </component>
 </project>
