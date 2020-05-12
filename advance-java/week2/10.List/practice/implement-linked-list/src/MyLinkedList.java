@@ -62,6 +62,9 @@ public class MyLinkedList<E>{
 
   public boolean removeValue(Object e) {
     Node beforeDelete = this.head;
+    if (this.head.getData().equals(e)) {
+      this.head = this.head.next;
+    }
     while(beforeDelete.next != null) {
       if (beforeDelete.next.getData().equals(e)) {
         beforeDelete.next = beforeDelete.next.next;
