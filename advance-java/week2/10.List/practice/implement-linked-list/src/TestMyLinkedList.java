@@ -3,9 +3,10 @@ import java.util.LinkedList;
 public class TestMyLinkedList {
   public static void main(String[] args) {
     MyLinkedList<Integer> llist = new MyLinkedList();
-    llist.addFirst(1);
+    llist.addLast(1);
+    llist.addFirst(0);
     llist.addLast(3);
-    llist.add(1,2);
+    llist.add(2,2);
     llist.addLast(4);
     llist.addLast(5);
     llist.addLast(6);

@@ -34,10 +34,15 @@ public class MyLinkedList<E>{
 
   public void addLast(E e) {
     Node temp = this.head;
-    while(temp.next != null) {
-      temp = temp.next;
+    if (this.head == null) {
+      this.head = new Node(e);
     }
-    temp.next = new Node(e);
+    else {
+      while(temp.next != null) {
+        temp = temp.next;
+      }
+      temp.next = new Node(e);
+    }
     this.numNodes++;
   }
 
