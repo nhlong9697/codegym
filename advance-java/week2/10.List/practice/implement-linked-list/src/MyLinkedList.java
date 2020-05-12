@@ -14,6 +14,7 @@ public class MyLinkedList<E>{
   }
 
   public void add(int index, E element) {
+    checkAppendableElementIndex(index);
     Node beforeInsert = this.head;
     for(int i = 0; i < index - 1; i++) {
       beforeInsert = beforeInsert.next;
@@ -41,6 +42,7 @@ public class MyLinkedList<E>{
   }
 
   public E remove(int index) {
+    checkElementIndex(index);
     Node beforeDelete = this.head;
     for(int i = 0; i < index - 1; i++) {
       beforeDelete = beforeDelete.next;
@@ -53,7 +55,7 @@ public class MyLinkedList<E>{
     return result;
   }
 
-  public boolean remove(Object e) {
+  public boolean removeValue(Object e) {
     Node beforeDelete = this.head;
     while(beforeDelete.next != null) {
       if (beforeDelete.next.getData().equals(e)) {
@@ -70,15 +72,22 @@ public class MyLinkedList<E>{
     return this.numNodes;
   }
 
-  public E clone() {
-    E result = (E) head.getData();
+  public Object clone() {
+    Node temp = this.head;
+    MyLinkedList<E> result = new MyLinkedList<>();
+    while(temp != null) {
+      E value = (E) temp.getData();
+      result.addLast(value);
+      temp = temp.next;
+    }
     return result;
   }
 
   public boolean contains(E o) {
     Node temp = head;
-    while(temp.next != null) {
-      if(temp.getData().equals(o)) {
+    while(temp != null) {
+      E value = (E) temp.getData();
+      if(value.equals(o)) {
         return true;
       }
       temp = temp.next;
@@ -89,8 +98,9 @@ public class MyLinkedList<E>{
   public int indexOf(E o) {
     Node temp = head;
     int index = 0;
-    while(temp.next != null) {
-      if (temp.getData().equals(o)) {
+    while(temp != null) {
+      E value = (E) temp.getData();
+      if (value.equals(o)) {
         return index;
       }
       index++;
@@ -100,6 +110,7 @@ public class MyLinkedList<E>{
   }
 
   public E get(int index) {
+    checkElementIndex(index);
     Node temp = head;
     for (int i = 0; i < index; i++) {
       temp = temp.next;
@@ -131,6 +142,23 @@ public class MyLinkedList<E>{
     while(node != null) {
       System.out.print(node.data + " ");
       node = node.next;
+    }
+  }
+
+  private boolean isElementIndex(int index) {
+    return index >=0 && index < this.size();
+  }
+  private boolean isAppendableElementIndex(int index) {
+    return index >=0 && index <= this.size();
+  }
+  private void checkElementIndex(int index) {
+    if (!this.isElementIndex(index)) {
+      throw new IndexOutOfBoundsException("index " + index + " out of bound");
+    }
+  }
+  private void checkAppendableElementIndex(int index) {
+    if (!this.isAppendableElementIndex(index)) {
+      throw new IndexOutOfBoundsException("index " + index + " out of bound");
     }
   }
 }
