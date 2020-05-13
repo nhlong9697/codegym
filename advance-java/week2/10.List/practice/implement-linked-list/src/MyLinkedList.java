@@ -64,6 +64,8 @@ public class MyLinkedList<E>{
     Node beforeDelete = this.head;
     if (this.head.getData().equals(e)) {
       this.head = this.head.next;
+      this.numNodes--;
+      return true;
     }
     while(beforeDelete.next != null) {
       if (beforeDelete.next.getData().equals(e)) {
