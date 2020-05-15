@@ -3,7 +3,7 @@ import java.util.Stack;
 
 public class ConvertToBinary {
   public static void main(String[] args) {
-    int number = 111;
+    int number = 1670;
     Stack<Integer> stackOfModulo = new Stack<>();
     StringBuilder binaryString = new StringBuilder("");
     while(number != 0) {

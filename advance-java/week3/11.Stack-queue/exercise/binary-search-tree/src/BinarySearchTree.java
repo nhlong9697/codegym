@@ -19,6 +19,10 @@ public class BinarySearchTree {
   }
 
   public Node insert(int value) {
+    if (this.root == null) {
+      this.root = new Node(value);
+      return this.root;
+    }
     Node currentNode = this.root;
     while (true) {
       if (value < currentNode.value) {
@@ -44,18 +48,17 @@ public class BinarySearchTree {
   }
   public ArrayList<Integer> inOrderTraversal() {
     ArrayList<Integer> result = new ArrayList<>();
-    this.inOrderTraversalHelper(this.root, result);
-    return result;
+    return this.inOrderTraversalHelper(this.root, result);
   }
   private ArrayList<Integer> inOrderTraversalHelper(Node node, ArrayList<Integer> inputArray) {
     if (node.left != null) {
-      this.inOrderTraversalHelper(node.left, inputArray);
+      inOrderTraversalHelper(node.left, inputArray);
     }
     if (node != null) {
       inputArray.add(node.value);
     }
     if (node.right != null) {
-      this.inOrderTraversalHelper(node.right, inputArray);
+      inOrderTraversalHelper(node.right, inputArray);
     }
     return inputArray;
   }
@@ -70,10 +73,10 @@ public class BinarySearchTree {
       inputArray.add(node.value);
     }
     if (node.left != null) {
-      this.inOrderTraversalHelper(node.left, inputArray);
+      inOrderTraversalHelper(node.left, inputArray);
     }
     if (node.right != null) {
-      this.inOrderTraversalHelper(node.right, inputArray);
+      inOrderTraversalHelper(node.right, inputArray);
     }
     return inputArray;
   }
@@ -85,14 +88,30 @@ public class BinarySearchTree {
 
   private ArrayList<Integer> postOrderTraversalHelper(Node node, ArrayList<Integer> inputArray) {
     if (node.left != null) {
-      this.postOrderTraversalHelper(node.left, inputArray);
+      postOrderTraversalHelper(node.left, inputArray);
     }
     if (node.right != null) {
-      this.postOrderTraversalHelper(node.right, inputArray);
+      postOrderTraversalHelper(node.right, inputArray);
     }
     if (node != null) {
       inputArray.add(node.value);
     }
     return inputArray;
+  }
+
+  public boolean contains(int value) {
+    Node currentNode = this.root;
+    while (currentNode != null) {
+      if (value < currentNode.value) {
+        currentNode = currentNode.left;
+      }
+      else if (value > currentNode.value) {
+        currentNode = currentNode.right;
+      }
+      else {
+        return true;
+      }
+    }
+    return false;
   }
 }
