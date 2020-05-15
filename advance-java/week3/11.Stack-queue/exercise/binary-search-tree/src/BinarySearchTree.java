@@ -73,10 +73,10 @@ public class BinarySearchTree {
       inputArray.add(node.value);
     }
     if (node.left != null) {
-      inOrderTraversalHelper(node.left, inputArray);
+      preOrderTraversalHelper(node.left, inputArray);
     }
     if (node.right != null) {
-      inOrderTraversalHelper(node.right, inputArray);
+      preOrderTraversalHelper(node.right, inputArray);
     }
     return inputArray;
   }
@@ -113,5 +113,68 @@ public class BinarySearchTree {
       }
     }
     return false;
+  }
+
+  public boolean delete(int value) {
+    return deleteHelper(value, this.root);
+  }
+  private boolean deleteHelper(int value, Node inputNode) {
+    Node parentNode = null;
+    Node currentNode = inputNode;
+    while(currentNode != null && currentNode.value != value) {
+      parentNode = currentNode;
+      if (value < currentNode.value) {
+        currentNode = currentNode.left;
+      }
+      else {
+        currentNode = currentNode.right;
+      }
+    }
+    //not found
+    if (currentNode == null) {
+      return false;
+    }
+    //found
+    //case 1: node has no children(leaf node)
+    if (currentNode.left == null && currentNode.right == null) {
+      //if not a root node
+      if (currentNode != inputNode) {
+        if (parentNode.left == currentNode) {
+          parentNode.left = null;
+        }
+        else {
+          parentNode.right =null;
+        }
+      }
+      else {
+        inputNode = null;
+      }
+      return true;
+    }
+    //case 2:node to be deleted has 2 children
+    else if (currentNode.left != null && currentNode.right != null) {
+      Node minNodeLeft = getMinNode(currentNode.right);
+      int minValue = minNodeLeft.value;
+      deleteHelper(minValue, inputNode);
+      currentNode.value = minValue;
+      return true;
+    }
+    else {
+      Node child = (currentNode.left != null) ? currentNode.left : currentNode.right;
+
+      if (currentNode != inputNode) {
+        parentNode.left = child;
+      }
+      else {
+        parentNode.right = child;
+      }
+      return true;
+    }
+  }
+  private Node getMinNode(Node currentNode) {
+    while(currentNode.left != null) {
+      currentNode = currentNode.left;
+    }
+    return currentNode;
   }
 }
