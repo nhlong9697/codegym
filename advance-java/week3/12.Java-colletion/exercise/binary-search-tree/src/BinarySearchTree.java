@@ -146,6 +146,7 @@ public class BinarySearchTree {
           parentNode.right =null;
         }
       }
+      //if is a root node
       else {
         inputNode = null;
       }
@@ -153,12 +154,12 @@ public class BinarySearchTree {
     }
     //case 2:node to be deleted has 2 children
     else if (currentNode.left != null && currentNode.right != null) {
-      Node minNodeLeft = getMinNode(currentNode.right);
-      int minValue = minNodeLeft.value;
+      int minValue = getMinValue(currentNode.right);
       deleteHelper(minValue, inputNode);
       currentNode.value = minValue;
       return true;
     }
+    //case 3:node to be deleted has 1 children
     else {
       Node child = (currentNode.left != null) ? currentNode.left : currentNode.right;
 
@@ -171,10 +172,12 @@ public class BinarySearchTree {
       return true;
     }
   }
-  private Node getMinNode(Node currentNode) {
+  private int getMinValue(Node currentNode) {
+    int value = currentNode.value;
     while(currentNode.left != null) {
       currentNode = currentNode.left;
+      value = currentNode.value;
     }
-    return currentNode;
+    return value;
   }
 }
