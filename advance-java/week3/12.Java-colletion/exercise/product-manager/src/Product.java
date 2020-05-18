@@ -1,10 +1,10 @@
-public class Product implements Comparable<Product> {
+public class Product {
   private static int id = 0;
   private String name;
-  private int price;
+  private double price;
   private int productId;
 
-  public Product(int price, String name) {
+  public Product(double price, String name) {
     this.price = price;
     this.name = name;
     this.productId = Product.id;
@@ -19,7 +19,7 @@ public class Product implements Comparable<Product> {
     this.name = name;
   }
 
-  public int getPrice() {
+  public double getPrice() {
     return price;
   }
 
@@ -31,16 +31,4 @@ public class Product implements Comparable<Product> {
     return this.productId;
   }
 
-  @Override
-  public int compareTo(Product product) {
-    if (this.price == product.price) {
-      return 0;
-    }
-    else if (this.price > product.price) {
-      return 1;
-    }
-    else {
-      return -1;
-    }
-  }
 }
