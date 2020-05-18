@@ -2,19 +2,17 @@ import java.util.Scanner;
 
 public class AlgorithmComplexityTest {
   public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
-    System.out.println("Enter a stirng: ");
-    String inputString = scanner.nextLine();
+    Scanner input = new Scanner(System.in);
+    System.out.println("Enter a new string: ");
+    String inputString = input.nextLine();
 
-    int[] frequentChar =  new int[255];
-
+    int[] frequentChar = new int[255];
     for (int i = 0; i < inputString.length(); i++) {
       int ascii = (int) inputString.charAt(i);
       frequentChar[ascii] += 1;
     }
 
     int max = 0;
-    //empty character
     char character = (char) 255;
     for (int j = 0; j < 255; j++) {
       if (frequentChar[j] > max) {
@@ -23,6 +21,6 @@ public class AlgorithmComplexityTest {
       }
     }
 
-    System.out.println("The most appearing letter is " + character + " with the frequency of " + max + " times");
+    System.out.println("The most appearing letter is " + character + " with a frequency " + max + " times");
   }
 }
