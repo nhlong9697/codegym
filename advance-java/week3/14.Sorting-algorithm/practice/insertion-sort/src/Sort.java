@@ -21,13 +21,11 @@ public class Sort {
 
   public static void insertionSort(double[] list) {
     for (int i = 1; i < list.length; i++) {
-      double key = list[i];
-      int j = i - 1;
-      while (j >= 0 && list[j] > key) {
-        list[j + 1] = list[j];
+      int j = i;
+      while(j > 0 && list[j] < list[j-1]) {
+        swap(list,j,j-1);
         j--;
       }
-      list[j+1] = key;
     }
   }
 
