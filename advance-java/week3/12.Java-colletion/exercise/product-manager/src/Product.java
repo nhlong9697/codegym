@@ -1,4 +1,4 @@
-public class Product {
+public class Product implements Comparable<Product> {
   private static int id = 0;
   private String name;
   private double price;
@@ -31,4 +31,21 @@ public class Product {
     return this.productId;
   }
 
+  @Override
+  public int compareTo(Product product) {
+    if (this.price > product.getPrice()) {
+      return 1;
+    }
+    else if (this.price < product.getPrice()) {
+      return -1;
+    }
+    else {
+      return 0;
+    }
+  }
+
+  @Override
+  public String toString() {
+    return this.name + "-" + this.productId + "-" + this.price;
+  }
 }
