@@ -17,7 +17,7 @@ public class ReadFileExample {
     //write
     try (PrintWriter sourcePrintWriter = new PrintWriter(new BufferedWriter(new FileWriter(sourceFile)))) {
     //append instead of write
-    //try (PrintWriter sourcePrintWriter = new PrintWriter(new BufferedWriter(new FileWriter(sourceFile,true)))) {
+    // try (PrintWriter sourcePrintWriter = new PrintWriter(new BufferedWriter(new FileWriter(sourceFile,true)))) {
       for (int i = 1; i <= 5; i++) {
         sourcePrintWriter.println(i);
       }
