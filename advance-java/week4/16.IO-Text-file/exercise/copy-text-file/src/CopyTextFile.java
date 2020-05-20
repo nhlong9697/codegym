@@ -5,9 +5,14 @@ public class CopyTextFile {
   public static void main(String[] args) throws IOException{
     //write source file
     try {
-      FileWriter sourceFile = new FileWriter("sourceFile.txt");
-      sourceFile.write("This is the source file");
-      sourceFile.close();
+      File sourceFile = new File("sourceFile.txt");
+      if (sourceFile.exists()) {
+        throw new FileAlreadyExistsException(sourceFile.getAbsolutePath());
+      }
+      FileWriter sourceFileWriter = new FileWriter(sourceFile);
+
+      sourceFileWriter.write("This is the source file");
+      sourceFileWriter.close();
     }
     catch (FileAlreadyExistsException ex) {
       System.out.println("file already exist");
@@ -19,18 +24,26 @@ public class CopyTextFile {
     try {
       //read source file
       File sourceFile = new File("sourceFile.txt");
+      //File sourceFile = new File("notExistTest.txt");
+      if (!sourceFile.exists()) {
+        throw new FileNotFoundException();
+      }
       FileReader sourceFileReader = new FileReader(sourceFile);
       BufferedReader sourceFileBuffer = new BufferedReader(sourceFileReader);
 
       //write to target file
-      FileWriter targetFile = new FileWriter("targetFile.txt");
+      File targetFile = new File("targetFile.txt");
+      if (targetFile.exists()) {
+        throw new FileAlreadyExistsException(targetFile.getAbsolutePath());
+      }
+      FileWriter targetFileWriter = new FileWriter("targetFile.txt");
       String sourceFileLine;
       String targetFileLine;
       while ((sourceFileLine = sourceFileBuffer.readLine()) != null) {
         targetFileLine = sourceFileLine.replaceAll("source", "target");
-        targetFile.write(targetFileLine);
+        targetFileWriter.write(targetFileLine);
       }
-      targetFile.close();
+      targetFileWriter.close();
       sourceFileBuffer.close();
     }
     catch(FileNotFoundException ex) {
@@ -48,9 +61,12 @@ public class CopyTextFile {
       FileReader targetFileReader = new FileReader(targetFile);
       BufferedReader targetFileBuffer = new BufferedReader(targetFileReader);
       String targetFileLine;
+      int fileSize = 0;
       while((targetFileLine = targetFileBuffer.readLine()) != null) {
+        fileSize += targetFileLine.length();
         System.out.println(targetFileLine);
       }
+      System.out.println("The file size is " + fileSize);
       targetFileBuffer.close();
     } catch (IOException ex) {
       ex.printStackTrace();
