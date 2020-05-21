@@ -21,6 +21,7 @@ public class Copy {
               BufferedInputStream inputStream = new BufferedInputStream(new FileInputStream(sourceFile));
               BufferedOutputStream outputStream = new BufferedOutputStream(new FileOutputStream(targetFile, true))
       ) {
+        byte[] buffer = new byte[1024];
         int byteRead;
         int totalBytesCopied = 0;
         while ((byteRead = inputStream.read()) != -1) {

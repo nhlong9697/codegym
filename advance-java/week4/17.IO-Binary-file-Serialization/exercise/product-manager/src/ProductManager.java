@@ -1,7 +1,7 @@
 import java.io.*;
 
 public class ProductManager {
-  public static void main(String[] args) throws IOException, ClassNotFoundException {
+  public static void main(String[] args) throws IOException {
     try (
       ObjectOutputStream output = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream("object.dat")));
     ) {
@@ -18,7 +18,7 @@ public class ProductManager {
       }
     } catch (ClassNotFoundException e) {
       System.out.println("class not found");
-    } catch (EOFException exception) {
+    } catch (EOFException ignored) {
     }
   }
 }
