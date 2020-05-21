@@ -13,27 +13,29 @@ public class Copy {
       }
       targetFile = new File("target.mp3");
       if (targetFile.exists()) {
-        throw new FileAlreadyExistsException(targetFile.getAbsolutePath());
-      }//read and copy
+        //throw new FileAlreadyExistsException(targetFile.getAbsolutePath());
+        System.out.println("file already existed");
+      }
+      //read and copy
       try (
               BufferedInputStream inputStream = new BufferedInputStream(new FileInputStream(sourceFile));
-              BufferedOutputStream outputStream = new BufferedOutputStream(new FileOutputStream(targetFile))
+              BufferedOutputStream outputStream = new BufferedOutputStream(new FileOutputStream(targetFile, true))
       ) {
         int byteRead;
-        double numberOfByteCopied = 0;
+        int totalBytesCopied = 0;
         while ((byteRead = inputStream.read()) != -1) {
           outputStream.write((byte) byteRead);
-          numberOfByteCopied++;
+          totalBytesCopied++;
         }
         System.out.println("copy successful");
-        System.out.println(numberOfByteCopied + " bytes copied");
-      } catch (Exception exception) {
-        exception.printStackTrace();
+        System.out.println(totalBytesCopied + "bytes copied");
+      } catch (Exception e) {
+        e.printStackTrace();
       }
     } catch (FileNotFoundException e) {
       System.out.println("File not found");
-    } catch (FileAlreadyExistsException exception) {
-      System.out.println("File already exists");
-    }
+    } //catch (FileAlreadyExistsException exception) {
+      //System.out.println("File already exists");
+    //}
   }
 }
