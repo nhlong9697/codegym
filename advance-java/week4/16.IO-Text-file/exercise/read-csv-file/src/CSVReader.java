@@ -30,6 +30,9 @@ public class CSVReader {
 
   public static void createCSVFile(File file) throws IOException {
     try (
+            //FileWriter is like FileOutputStream can add a boolean parameter if you want to append value instead of
+            //delete old file and create new one with new data
+            //PrintWriter csvPrintWriter = new PrintWriter(new BufferedWriter(new FileWriter(file)))
             PrintWriter csvPrintWriter = new PrintWriter(new BufferedWriter(new FileWriter(file, true)))
     ) {
       //generate data
