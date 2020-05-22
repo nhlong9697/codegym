@@ -27,7 +27,6 @@ class PrintChar implements Runnable {
   @Override
   public void run() {
     try {
-
       for (int i = 0; i < times; i++) {
         System.out.print(charToPrint);
       }
