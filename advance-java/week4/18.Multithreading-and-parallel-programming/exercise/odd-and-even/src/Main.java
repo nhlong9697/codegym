@@ -4,7 +4,7 @@ public class Main {
     EvenThread evenThread = new EvenThread();
 
     oddThread.start();
-    //oddThread.join();
+    oddThread.join();
     evenThread.start();
   }
 }
