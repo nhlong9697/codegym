@@ -50,7 +50,7 @@ public class ThreadCooperation {
     public void withdraw(int amount) {
       lock.lock();
       try {
-        if (balance < amount) {
+        while (balance < amount) {
           System.out.println("\t\t\tWait for a deposit");
           newDeposit.await();
           //if using if statement in stead of while the block of code will continue to run
