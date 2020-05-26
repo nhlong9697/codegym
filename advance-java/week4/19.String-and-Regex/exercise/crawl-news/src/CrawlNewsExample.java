@@ -7,29 +7,24 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class CrawlSongExample {
+public class CrawlNewsExample {
   public static void main(String[] args) {
     try {
-      URL url = new URL("https://www.nhaccuatui.com/bai-hat/nhac-tre-moi.html");
-      //open the stream and put it into BufferedReader
+      URL url = new URL("https://dantri.com.vn/the-gioi.htm");
+
       Scanner scanner = new Scanner(new InputStreamReader(url.openStream()));
       scanner.useDelimiter("\\Z");
       String content = scanner.next();
-      // close scanner
       scanner.close();
 
-      content = content.replaceAll("\\n+", "");
-      Pattern pattern = Pattern.compile("name_song\">(.*?)</a>");
-      //Pattern pattern = Pattern.complie("name_some\">(C)(.*?)</a>");
+      content = content.replaceAll("\\n+","");
+      Pattern pattern = Pattern.compile("htm\">(.*?)</a></h2>");
       Matcher matcher = pattern.matcher(content);
 
       while(matcher.find()) {
-        System.out.println(matcher.group(2));
-        //System.out.println(matcher.group(1));
-        //will return C
-        //System.out.println(matcher.group(2));
-        //will return the rest until a
+        System.out.println(matcher.group(1));
       }
+
     } catch (MalformedURLException exception) {
       exception.printStackTrace();
     } catch (UnsupportedEncodingException exception) {
