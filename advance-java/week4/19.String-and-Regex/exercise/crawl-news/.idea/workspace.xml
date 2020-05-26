@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="87a993b7-499c-42c2-ba5a-4ccd1918f7fa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../validate-class-name/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../validate-class-name/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../validate-class-name/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../validate-class-name/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../validate-class-name/src/ClassNameExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../validate-class-name/src/ClassNameExampleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../validate-class-name/validate-class-name.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../validate-phone-number/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../validate-phone-number/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../validate-phone-number/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../validate-phone-number/out/production/validate-phone-number/PhoneNumberExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../validate-phone-number/out/production/validate-phone-number/PhoneNumberExampleTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../validate-phone-number/src/PhoneNumberExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../validate-phone-number/src/PhoneNumberExampleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../validate-phone-number/validate-phone-number.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../week2/8.Clean-code-and-refactor/exercise/java-cleancode-refactoring-exercise" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../week2/8.Clean-code-and-refactor/exercise/java-cleancode-refactoring-exercise" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-method-extraction" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-method-extraction" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-renaming" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-renaming" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-variable-extraction" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-variable-extraction" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../week2/9.Automate-testing-and-TDD/practice/junit-simple-calculator" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../week2/9.Automate-testing-and-TDD/practice/junit-simple-calculator" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectId" id="1cRBJj7P0563HN02OYELwyD4Hph" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="87a993b7-499c-42c2-ba5a-4ccd1918f7fa" name="Default Changelist" comment="" />
+      <created>1590481455765</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590481455765</updated>
+      <workItem from="1590481459345" duration="17000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+</project>
