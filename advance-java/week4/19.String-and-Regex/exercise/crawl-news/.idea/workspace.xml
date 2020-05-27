@@ -20,15 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87a993b7-499c-42c2-ba5a-4ccd1918f7fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CrawlNewsExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../week2/8.Clean-code-and-refactor/exercise/java-cleancode-refactoring-exercise" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../week2/8.Clean-code-and-refactor/exercise/java-cleancode-refactoring-exercise" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-method-extraction" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-method-extraction" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-renaming" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-renaming" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-variable-extraction" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-variable-extraction" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../week2/9.Automate-testing-and-TDD/practice/junit-simple-calculator" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../week2/9.Automate-testing-and-TDD/practice/junit-simple-calculator" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../practice/crawl-song-list/out/production/crawl-song-list/CrawlSongExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../practice/crawl-song-list/out/production/crawl-song-list/CrawlSongExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../practice/crawl-song-list/src/CrawlSongExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../practice/crawl-song-list/src/CrawlSongExample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1590481455765</updated>
       <workItem from="1590481459345" duration="17000" />
-      <workItem from="1590481488033" duration="1945000" />
+      <workItem from="1590481488033" duration="2674000" />
     </task>
     <servers />
   </component>
@@ -97,22 +94,22 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1324" height="178" key="GridCell.Tab.0.bottom" timestamp="1590483747636">
+    <state width="1324" height="178" key="GridCell.Tab.0.bottom" timestamp="1590486221243">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1324" height="178" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1590483747636" />
-    <state width="1324" height="178" key="GridCell.Tab.0.center" timestamp="1590483747635">
+    <state width="1324" height="178" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1590486221243" />
+    <state width="1324" height="178" key="GridCell.Tab.0.center" timestamp="1590486221243">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1324" height="178" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1590483747635" />
-    <state width="1324" height="178" key="GridCell.Tab.0.left" timestamp="1590483747634">
+    <state width="1324" height="178" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1590486221243" />
+    <state width="1324" height="178" key="GridCell.Tab.0.left" timestamp="1590486221242">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1324" height="178" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1590483747634" />
-    <state width="1324" height="178" key="GridCell.Tab.0.right" timestamp="1590483747636">
+    <state width="1324" height="178" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1590486221242" />
+    <state width="1324" height="178" key="GridCell.Tab.0.right" timestamp="1590486221243">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1324" height="178" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1590483747636" />
+    <state width="1324" height="178" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1590486221243" />
     <state x="301" y="37" width="754" height="717" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1590482812470">
       <screen x="0" y="27" width="1366" height="741" />
     </state>

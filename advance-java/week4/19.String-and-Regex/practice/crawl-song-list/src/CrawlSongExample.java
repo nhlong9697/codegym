@@ -24,7 +24,7 @@ public class CrawlSongExample {
       Matcher matcher = pattern.matcher(content);
 
       while(matcher.find()) {
-        System.out.println(matcher.group(2));
+        System.out.println(matcher.group(1));
         //System.out.println(matcher.group(1));
         //will return C
         //System.out.println(matcher.group(2));
