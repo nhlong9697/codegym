@@ -7,6 +7,6 @@ public class FileDownloaderProxy implements Downloader{
 
   @Override
   public void downloadFile(String url) {
-
+    fileDownloader.downloadFile(url);
   }
 }

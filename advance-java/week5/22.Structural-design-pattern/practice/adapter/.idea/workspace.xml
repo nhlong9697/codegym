@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="168dd6bc-8005-4e54-a9f8-991b5119a16e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../exercise/adapter/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/adapter/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/adapter/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/adapter/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/adapter/adapter.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/adapter/src/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/adapter/src/CollectionUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/proxy/out/production/proxy/Downloader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/proxy/out/production/proxy/FileDownloader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/proxy/out/production/proxy/FileDownloaderProxy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/proxy/out/production/proxy/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/proxy/sample.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/proxy/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/codegym_file_utils.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adapter.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FileCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FileCalculatorAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codegym-file-util-master.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codegym-file-util-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codegym-file-util-master/codegym-file-utils.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../week1/3.Array-and-function-Java/exercise/RemoveElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../week1/3.Array-and-function-Java/exercise/RemoveElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercise/proxy/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/proxy/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercise/proxy/src/FileDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/proxy/src/FileDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercise/proxy/src/FileDownloaderProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/proxy/src/FileDownloaderProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../in-class/adapter/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../in-class/adapter/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../proxy/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectId" id="1cWpO7CvYpdOncUQsmW5qV0vDDV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../in-class/adapter" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="168dd6bc-8005-4e54-a9f8-991b5119a16e" name="Default Changelist" comment="" />
+      <created>1590654168326</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590654168326</updated>
+      <workItem from="1590654171319" duration="4308000" />
+      <workItem from="1590667445514" duration="1050000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1590654816293">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1590654816293" />
+    <state x="389" y="105" key="FileChooserDialogImpl" timestamp="1590657806122">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="389" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590657806122" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1590681279546">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1590681279546" />
+  </component>
+</project>

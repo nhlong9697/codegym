@@ -13,3 +13,6 @@
 [submodule "advance-java/week2/9.Automate-testing-and-TDD/practice/junit-simple-calculator"]
 	path = advance-java/week2/9.Automate-testing-and-TDD/practice/junit-simple-calculator
 	url = https://github.com/codegym-vn/junit-simple-calculator
+[submodule "advance-java/week5/22.Structural-design-pattern/exercise/java-adapter-collection"]
+	path = advance-java/week5/22.Structural-design-pattern/exercise/java-adapter-collection
+	url = https://github.com/codegym-vn/java-adapter-collection
