@@ -19,39 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="168dd6bc-8005-4e54-a9f8-991b5119a16e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../exercise/adapter/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/adapter/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/adapter/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/adapter/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/adapter/adapter.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/adapter/src/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/adapter/src/CollectionUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/proxy/out/production/proxy/Downloader.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/proxy/out/production/proxy/FileDownloader.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/proxy/out/production/proxy/FileDownloaderProxy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/proxy/out/production/proxy/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/proxy/sample.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/proxy/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/codegym_file_utils.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adapter.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FileCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FileCalculatorAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../codegym-file-util-master.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../codegym-file-util-master/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../codegym-file-util-master/codegym-file-utils.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../week1/3.Array-and-function-Java/exercise/RemoveElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../week1/3.Array-and-function-Java/exercise/RemoveElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercise/proxy/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/proxy/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercise/proxy/src/FileDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/proxy/src/FileDownloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercise/proxy/src/FileDownloaderProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercise/proxy/src/FileDownloaderProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../in-class/adapter/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../in-class/adapter/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proxy/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../proxy/.idea/misc.xml" afterDir="false" />
-    </list>
+    <list default="true" id="168dd6bc-8005-4e54-a9f8-991b5119a16e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +50,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../in-class/adapter" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../exercise/java-adapter-collection" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -96,7 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1590654168326</updated>
       <workItem from="1590654171319" duration="4308000" />
-      <workItem from="1590667445514" duration="1050000" />
+      <workItem from="1590667445514" duration="1960000" />
     </task>
     <servers />
   </component>
@@ -123,10 +91,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1590654816293" />
-    <state x="389" y="105" key="FileChooserDialogImpl" timestamp="1590657806122">
+    <state x="389" y="105" key="FileChooserDialogImpl" timestamp="1590682781464">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="389" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590657806122" />
+    <state x="389" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590682781464" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1590681279546">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
