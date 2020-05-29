@@ -16,3 +16,6 @@
 [submodule "advance-java/week5/22.Structural-design-pattern/exercise/java-adapter-collection"]
 	path = advance-java/week5/22.Structural-design-pattern/exercise/java-adapter-collection
 	url = https://github.com/codegym-vn/java-adapter-collection
+[submodule "advance-java/week5/22.Structural-design-pattern/exercise/java-facade-random"]
+	path = advance-java/week5/22.Structural-design-pattern/exercise/java-facade-random
+	url = https://github.com/codegym-vn/java-facade-random
