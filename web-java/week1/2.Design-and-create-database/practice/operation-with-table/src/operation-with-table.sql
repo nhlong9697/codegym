@@ -1,4 +1,5 @@
-USE test;
+CREATE DATABASE store;
+USE store;
 CREATE TABLE contacts (
     contact_id INT(11) NOT NULL AUTO_INCREMENT,
     last_name VARCHAR(30) NOT NULL,
