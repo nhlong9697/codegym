@@ -1,0 +1,137 @@
+USE classicmodels;
+
+CREATE PROCEDURE GetCustomers()
+BEGIN
+    SELECT
+        customerName,
+        city,
+        state,
+        postalCode,
+        country
+    FROM
+        customers
+    ORDER BY customerName;
+END;
+DROP PROCEDURE GetCustomers;
+
+CALL GetCustomers();
+
+DELIMITER //
+
+CREATE PROCEDURE GetAllProducts()
+BEGIN
+    SELECT *  FROM products;
+END //
+
+DELIMITER ;
+
+CALL GetAllProducts();
+#Delimiter is end by ; but since there are many semi-colon inside the definition of store procedure
+# => use delimiter to negates these delimiter
+
+DELIMITER $$
+
+CREATE PROCEDURE GetEmployees()
+BEGIN
+    SELECT
+        firstName,
+        lastName,
+        city,
+        state,
+        country
+    FROM employees
+             INNER JOIN offices using (officeCode);
+
+END$$
+
+DELIMITER ;
+DROP PROCEDURE GetEmployees;
+
+DROP PROCEDURE IF EXISTS abc;
+SHOW WARNINGS;
+
+DELIMITER $$
+#Create variable
+CREATE PROCEDURE GetTotalOrder()
+BEGIN
+    DECLARE totalOrder INT DEFAULT 0;
+
+    SELECT totalOrder;
+    SELECT COUNT(*)
+    INTO totalOrder
+    FROM orders;
+
+END$$
+DELIMITER ;
+CALL GetTotalOrder();
+DROP PROCEDURE GetTotalOrder;
+
+#find procedure
+
+SHOW PROCEDURE STATUS WHERE db = 'classicmodels';
+SHOW PROCEDURE STATUS LIKE '%Order%';
+
+SELECT
+    routine_name
+FROM
+    information_schema.routines
+WHERE
+        routine_type = 'PROCEDURE'
+  AND routine_schema = 'classicmodels';
+
+#parameters
+DELIMITER //
+
+CREATE PROCEDURE GetOfficeByCountry(
+    IN countryName VARCHAR(255)
+)
+BEGIN
+    SELECT *
+    FROM offices
+    WHERE country = countryName;
+END //
+
+DELIMITER ;
+
+CALL GetOfficeByCountry('Germany');
+#error
+CALL GetOfficeByCountry();
+
+#out
+DELIMITER $$
+
+CREATE PROCEDURE GetOrderCountByStatus (
+    IN  orderStatus VARCHAR(25),
+    OUT total INT
+)
+BEGIN
+    SELECT COUNT(orderNumber)
+    INTO total
+    FROM orders
+    WHERE status = orderStatus;
+END$$
+
+DELIMITER ;
+
+CALL GetOrderCountByStatus('Shipped',@total);
+SELECT @total AS total;
+#SET @total;
+
+#in out
+DELIMITER $$
+
+CREATE PROCEDURE SetCounter(
+    INOUT counter INT,
+    IN inc INT
+)
+BEGIN
+    SET counter = counter + inc;
+END$$
+
+DELIMITER ;
+
+SET @counter = 1;
+CALL SetCounter(@counter,1);
+CALL SetCounter(@counter,1);
+CALL SetCounter(@counter,5);
+SELECT @counter;
