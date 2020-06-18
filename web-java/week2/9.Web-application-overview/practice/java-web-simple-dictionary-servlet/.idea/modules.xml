@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/jav-web-currency-converter.iml" filepath="$PROJECT_DIR$/jav-web-currency-converter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-web-simple-dictionary-servlet.iml" filepath="$PROJECT_DIR$/java-web-simple-dictionary-servlet.iml" />
     </modules>
   </component>
 </project>
