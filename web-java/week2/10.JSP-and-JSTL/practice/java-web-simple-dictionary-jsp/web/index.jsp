@@ -9,6 +9,7 @@
 <html>
   <head>
     <title>Dictionary</title>
+    <link rel="stylesheet" href="style/style.css">
   </head>
   <body>
   <h1>Vietnamese Dictionary</h1>
