@@ -23,7 +23,7 @@ public class CustomerServlet extends HttpServlet {
       action = "";
     }
     switch(action) {
-      case "creat":
+      case "create":
         createCustomer(request,response);
         break;
       case "delete":
@@ -84,7 +84,7 @@ public class CustomerServlet extends HttpServlet {
     String address = request.getParameter("address");
     Customer newCustomer = new Customer(id,name,email,address);
     this.customerService.save(newCustomer);
-    RequestDispatcher dispatcher = request.getRequestDispatcher("customer/creat.jsp");
+    RequestDispatcher dispatcher = request.getRequestDispatcher("customer/create.jsp");
     request.setAttribute("message", "New customer was created");
     try {
       dispatcher.forward(request,response);
@@ -119,7 +119,7 @@ public class CustomerServlet extends HttpServlet {
   }
 
   private void showAddForm(HttpServletRequest request, HttpServletResponse response) {
-    RequestDispatcher dispatcher = request.getRequestDispatcher("customer/add.jsp");
+    RequestDispatcher dispatcher = request.getRequestDispatcher("customer/create.jsp");
     try {
       dispatcher.forward(request,response);
     } catch (ServletException | IOException e) {
@@ -149,6 +149,7 @@ public class CustomerServlet extends HttpServlet {
     Customer customer = this.customerService.findById(id);
     RequestDispatcher dispatcher;
     if (customer == null) {
+      request.setAttribute("message","cannot find the id to delete");
       dispatcher = request.getRequestDispatcher("error-404.jsp");
     } else {
       request.setAttribute("customer", customer);
@@ -181,6 +182,7 @@ public class CustomerServlet extends HttpServlet {
       request.setAttribute("customer",customer);
       dispatcher = request.getRequestDispatcher("customer/view.jsp");
     } else {
+      request.setAttribute("message","cannot find customer to show");
       dispatcher = request.getRequestDispatcher("error-404.jsp");
     }
     try {
