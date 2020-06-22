@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "CustomerServlet", urlPatterns = "/customers")
+@WebServlet(name = "CustomerServlet", urlPatterns = {"/customers","/"})
 public class CustomerServlet extends HttpServlet {
 
   private final CustomerService customerService = new CustomerServiceImpl();
@@ -82,10 +82,13 @@ public class CustomerServlet extends HttpServlet {
     String name = request.getParameter("name");
     String email = request.getParameter("email");
     String address = request.getParameter("address");
+
     Customer newCustomer = new Customer(id,name,email,address);
     this.customerService.save(newCustomer);
+
     RequestDispatcher dispatcher = request.getRequestDispatcher("customer/create.jsp");
     request.setAttribute("message", "New customer was created");
+
     try {
       dispatcher.forward(request,response);
     } catch (IOException | ServletException exception) {
