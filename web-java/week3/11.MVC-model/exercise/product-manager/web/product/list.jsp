@@ -19,9 +19,17 @@
     <p>
         <a href="/products?action=add">Create new customer</a>
     </p>
-    <form action="/products?action=search" method="post">
+    <form action="/products?action=search" method="get">
         <input type="text" name="nameToSearch" placeholder="Enter name to search">
         <input type="submit" id="submit" value="Submit">
+    </form>
+    <form action="/products?action=sort" method="get">
+        <select name="category" onchange="this.form.submit()">
+            <option value="id">Sort by ID</option>
+            <option value="productName">Sort by product name</option>
+            <option value="category">Sort by category</option>
+            <option value="price">Sort by price</option>
+        </select>
     </form>
     <table border="1">
        <tr>

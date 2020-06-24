@@ -16,4 +16,6 @@ public interface ProductService {
   void update(int id, Product product);
 
   void remove(int id);
+
+  List<Product> sortBy(String searchCategory);
 }

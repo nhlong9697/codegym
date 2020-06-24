@@ -39,6 +39,8 @@ public class ProductServiceImpl implements ProductService{
 
   @Override
   public void add(Product product) {
+    int id = (int) (Math.random() * 10000);
+    product.setId(id);
     products.put(product.getId(),product);
   }
 
@@ -55,5 +57,10 @@ public class ProductServiceImpl implements ProductService{
   @Override
   public void remove(int id) {
     products.remove(id);
+  }
+
+  @Override
+  public List<Product> sortBy(String searchCategory) {
+    return null;
   }
 }

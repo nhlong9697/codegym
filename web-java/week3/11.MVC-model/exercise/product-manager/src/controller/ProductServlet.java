@@ -1,6 +1,7 @@
 package controller;
 
 import model.Product;
+import service.ProductDAO;
 import service.ProductService;
 import service.ProductServiceImpl;
 
@@ -15,7 +16,7 @@ import java.util.List;
 
 @WebServlet(name = "ProductServlet", urlPatterns = "/products")
 public class ProductServlet extends HttpServlet {
-  private final ProductService productService = new ProductServiceImpl();
+  private final ProductService productService = new ProductDAO();
   protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     String action = request.getParameter("action");
     if (action == null) {
@@ -24,9 +25,6 @@ public class ProductServlet extends HttpServlet {
     switch(action) {
       case "add":
         addProduct(request,response);
-        break;
-      case "search":
-        searchProduct(request,response);
         break;
       case "delete":
         deleteProduct(request,response);
@@ -80,12 +78,11 @@ public class ProductServlet extends HttpServlet {
   }
 
   private void addProduct(HttpServletRequest request, HttpServletResponse response) {
-    int id = (int) (Math.random() * 10000);
     String productName = request.getParameter("productName");
     String category = request.getParameter("category");
     int price = Integer.parseInt(request.getParameter("price"));
 
-    Product newProduct = new Product(id,category,productName,price);
+    Product newProduct = new Product(category,productName,price);
     this.productService.add(newProduct);
 
     request.setAttribute("message","New product is added");
@@ -96,17 +93,7 @@ public class ProductServlet extends HttpServlet {
     }
   }
 
-  private void searchProduct(HttpServletRequest request, HttpServletResponse response) {
-    String nameToSearch = request.getParameter("nameToSearch");
-    List<Product> foundProduct = this.productService.findByName(nameToSearch);
-    request.setAttribute("products", foundProduct);
-    request.setAttribute("message","Found " + foundProduct.size() + " product(s)");
-    try {
-      request.getRequestDispatcher("product/list.jsp").forward(request,response);
-    } catch (ServletException | IOException e) {
-      e.printStackTrace();
-    }
-  }
+
 
   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     String action = request.getParameter("action");
@@ -125,6 +112,9 @@ public class ProductServlet extends HttpServlet {
         break;
       case "view":
         viewProduct(request,response);
+        break;
+      case "search":
+        searchProduct(request,response);
         break;
       default:
         listProduct(request,response);
@@ -188,6 +178,17 @@ public class ProductServlet extends HttpServlet {
   private void showAddForm(HttpServletRequest request, HttpServletResponse response) {
     try {
       request.getRequestDispatcher("product/add.jsp").forward(request,response);
+    } catch (ServletException | IOException e) {
+      e.printStackTrace();
+    }
+  }
+  private void searchProduct(HttpServletRequest request, HttpServletResponse response) {
+    String nameToSearch = request.getParameter("nameToSearch");
+    List<Product> foundProduct = this.productService.findByName(nameToSearch);
+    request.setAttribute("products", foundProduct);
+    request.setAttribute("message","Found " + foundProduct.size() + " product(s)");
+    try {
+      request.getRequestDispatcher("product/list.jsp").forward(request,response);
     } catch (ServletException | IOException e) {
       e.printStackTrace();
     }
