@@ -1,6 +1,6 @@
-package main.org.usefulllibs.greeter.impl;
+package main.org.usefullibs.greeter.impl;
 
-import main.org.usefulllibs.greeter.Greeter;
+import main.org.usefullibs.greeter.Greeter;
 
 public class HelloWorld implements Greeter {
     @Override

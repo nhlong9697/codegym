@@ -12,14 +12,14 @@ public class ProductServiceImpl implements ProductService{
 
   static {
     products = new HashMap<>();
-    products.put(1, new Product(1,"Book","The old man and the sea", 25));
-    products.put(2, new Product(2, "Laptop", "Dell Inspiron 3580", 1000));
-    products.put(3, new Product(3, "Beverage","Pepsi", 3));
-    products.put(4, new Product(4, "Laptop","Macbook Air", 2500));
-    products.put(5, new Product(5, "Phone","Xiaomi Rednote 4", 400));
-    products.put(6, new Product(6, "Phone","IPhone 10", 1000));
-    products.put(7, new Product(7, "Phone","Samsung galaxy S8", 800));
-    products.put(8, new Product(8, "Book","The Intelligent Investor", 3));
+    products.put(1, new Product(1,"The old man and the sea","Book", 25));
+    products.put(2, new Product(2, "Dell Inspiron 3580","Laptop" , 1000));
+    products.put(3, new Product(3, "Pepsi","Beverage", 3));
+    products.put(4, new Product(4, "Macbook Air","Laptop", 2500));
+    products.put(5, new Product(5, "Xiaomi Rednote 4","Phone", 400));
+    products.put(6, new Product(6, "IPhone 10","Phone", 1000));
+    products.put(7, new Product(7, "Samsung galaxy S8","Phone", 800));
+    products.put(8, new Product(8, "The Intelligent Investor","Book", 3));
   }
   @Override
   public List<Product> findAll() {

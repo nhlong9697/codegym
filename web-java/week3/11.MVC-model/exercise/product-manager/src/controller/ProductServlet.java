@@ -82,7 +82,7 @@ public class ProductServlet extends HttpServlet {
     String category = request.getParameter("category");
     int price = Integer.parseInt(request.getParameter("price"));
 
-    Product newProduct = new Product(category,productName,price);
+    Product newProduct = new Product(productName,category,price);
     this.productService.add(newProduct);
 
     request.setAttribute("message","New product is added");
@@ -116,9 +116,23 @@ public class ProductServlet extends HttpServlet {
       case "search":
         searchProduct(request,response);
         break;
+      case "sort":
+        sortProduct(request,response);
+        break;
       default:
         listProduct(request,response);
         break;
+    }
+  }
+
+  private void sortProduct(HttpServletRequest request, HttpServletResponse response) {
+    String categoryToSort = request.getParameter("categoryToSort");
+    List<Product> sortedProducts = this.productService.sortBy(categoryToSort);
+    request.setAttribute("products", sortedProducts);
+    try {
+      request.getRequestDispatcher("product/list.jsp").forward(request,response);
+    } catch (ServletException | IOException e) {
+      e.printStackTrace();
     }
   }
 

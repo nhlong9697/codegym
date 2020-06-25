@@ -9,12 +9,19 @@ import java.util.List;
 public class ProductDAO implements ProductService{
 
     private String jdbcPassword = "Long12345^";
-    private String jdbcUsername = "long"; private String jdbcURL = "jdbc:mysql://localhost:3306/demo"; private static final String SELECT_ALL_PRODUCT = "SELECT * FROM demo.products"; private static final String SORT_BY_A_CATEGORY = "SELECT id,productName,category, price FROM " + "demo.products ORDER BY ?"; private static final String SELECT_PRODUCT_BY_ID = "SELECT id, productName, category, price " + "FROM demo.products WHERE id = ?"; private static final String SEARCH_PRODUCT_BY_PRODUCT_NAME = "SELECT " +
+    private String jdbcUsername = "long";
+    private String jdbcURL = "jdbc:mysql://localhost:3306/demo";
+    private static final String SELECT_ALL_PRODUCT = "SELECT * FROM demo.products";
+    private static final String SORT_BY_A_CATEGORY = "SELECT id,productName,category, price FROM " +
+            "demo.products ORDER BY %s";
+    private static final String SELECT_PRODUCT_BY_ID = "SELECT id, productName, category, price " +
+            "FROM demo.products WHERE id = ?";
+    private static final String SEARCH_PRODUCT_BY_PRODUCT_NAME = "SELECT " +
             "id, " +
             "productName," +
             "category," +
             "price " +
-            "FROM demo.products WHERE productName LIKE '%?%'";
+            "FROM demo.products WHERE productName LIKE ?";
     private static final String INSERT_PRODUCT = "INSERT INTO demo.products (" +
             "productName," +
             "category," +
@@ -22,6 +29,11 @@ public class ProductDAO implements ProductService{
             ") " +
             "VALUES (?,?,?);";
     private static final String DELETE_PRODUCT = "DELETE FROM demo.products WHERE ID = ?";
+    private static final String UPDATE_USER = "UPDATE demo.products " +
+            "SET productName = ?, " +
+            "category = ?, " +
+            "price = ? " +
+            "WHERE id = ?";
     public ProductDAO() {
     }
 
@@ -70,7 +82,7 @@ public class ProductDAO implements ProductService{
                 PreparedStatement preparedStatement = connection.prepareStatement(SEARCH_PRODUCT_BY_PRODUCT_NAME);
         ) {
 
-            preparedStatement.setString(1,nameToFind);
+            preparedStatement.setString(1,"%" + nameToFind + "%");
             System.out.println(preparedStatement);
             ResultSet rs = preparedStatement.executeQuery();
 
@@ -131,16 +143,27 @@ public class ProductDAO implements ProductService{
 
     @Override
     public void update(int id, Product product) {
-
+        try (Connection connection = getConnection();
+        PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_USER);) {
+            preparedStatement.setString(1,product.getProductName());
+            preparedStatement.setString(2,product.getCategory());
+            preparedStatement.setInt(3,product.getPrice());
+            preparedStatement.setInt(4,id);
+            preparedStatement.executeUpdate();
+        } catch (SQLException exception) {
+            exception.printStackTrace();
+        }
     }
 
     @Override
     public void remove(int id) {
         try (Connection connection = getConnection();
-             PreparedStatement statement =
+             PreparedStatement preparedStatement =
                 connection.prepareStatement(DELETE_PRODUCT);
+
         ) {
-            statement.setInt(1, id);
+            preparedStatement.setInt(1, id);
+            preparedStatement.executeUpdate();
         } catch (SQLException exception) {
             exception.printStackTrace();
         }
@@ -149,12 +172,12 @@ public class ProductDAO implements ProductService{
     @Override
     public List<Product> sortBy(String sortCategory) {
         List<Product> sortedProducts = new ArrayList<>();
+        String sortByACategoryStatement = String.format(SORT_BY_A_CATEGORY,sortCategory);
         try (
                 Connection connection = getConnection();
                 PreparedStatement preparedStatement =
-                        connection.prepareStatement(SORT_BY_A_CATEGORY);
+                        connection.prepareStatement(sortByACategoryStatement);
         ) {
-            preparedStatement.setString(1,sortCategory);
             System.out.println(preparedStatement);
             ResultSet rs = preparedStatement.executeQuery();
 

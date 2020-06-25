@@ -19,12 +19,14 @@
     <p>
         <a href="/products?action=add">Create new customer</a>
     </p>
-    <form action="/products?action=search" method="get">
+    <form action="/products" method="get">
+        <input type="hidden" name="action" value="search">
         <input type="text" name="nameToSearch" placeholder="Enter name to search">
         <input type="submit" id="submit" value="Submit">
     </form>
-    <form action="/products?action=sort" method="get">
-        <select name="category" onchange="this.form.submit()">
+    <form action="/products" method="get">
+        <input type="hidden" name="action" value="sort">
+        <select name="categoryToSort" onchange="this.form.submit()">
             <option value="id">Sort by ID</option>
             <option value="productName">Sort by product name</option>
             <option value="category">Sort by category</option>

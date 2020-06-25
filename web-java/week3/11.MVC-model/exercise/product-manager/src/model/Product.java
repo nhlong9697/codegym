@@ -2,21 +2,21 @@ package model;
 
 public class Product {
   private int id;
-  private String category;
   private String productName;
+  private String category;
   private int price;
 
-  public Product(int id,String category, String productName, int price) {
+  public Product(int id,String productName, String category, int price) {
     this.id = id;
     this.productName = productName;
-    this.price = price;
     this.category = category;
+    this.price = price;
   }
 
-  public Product(String category, String productName, int price) {
+  public Product(String productName, String category, int price) {
 
-    this.category = category;
     this.productName = productName;
+    this.category = category;
     this.price = price;
   }
 
