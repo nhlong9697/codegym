@@ -3,7 +3,6 @@ package controller;
 import model.Product;
 import service.ProductDAO;
 import service.ProductService;
-import service.ProductServiceImpl;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -39,16 +38,22 @@ public class ProductServlet extends HttpServlet {
   private void editProduct(HttpServletRequest request, HttpServletResponse response) {
     int id = Integer.parseInt(request.getParameter("id"));
     String productName = request.getParameter("productName");
-    String category = request.getParameter("category");
     int price = Integer.parseInt(request.getParameter("price"));
+    int quantity = Integer.parseInt(request.getParameter("quantity"));
+    String color = request.getParameter("color");
+    String description = request.getParameter("description");
+    String category = request.getParameter("category");
     Product product = this.productService.findById(id);
     RequestDispatcher dispatcher;
     if(product == null){
       dispatcher = request.getRequestDispatcher("error-404.jsp");
     } else {
       product.setProductName(productName);
-      product.setCategory(category);
       product.setPrice(price);
+      product.setQuantity(quantity);
+      product.setColor(color);
+      product.setDescription(description);
+      product.setCategory(category);
       this.productService.update(id, product);
       request.setAttribute("product", product);
       request.setAttribute("message", "Product information was updated");
@@ -79,10 +84,13 @@ public class ProductServlet extends HttpServlet {
 
   private void addProduct(HttpServletRequest request, HttpServletResponse response) {
     String productName = request.getParameter("productName");
-    String category = request.getParameter("category");
     int price = Integer.parseInt(request.getParameter("price"));
+    int quantity = Integer.parseInt(request.getParameter("quantity"));
+    String color = request.getParameter("color");
+    String description = request.getParameter("description");
+    String category = request.getParameter("category");
 
-    Product newProduct = new Product(productName,category,price);
+    Product newProduct = new Product(productName,price,quantity,color,description,category);
     this.productService.add(newProduct);
 
     request.setAttribute("message","New product is added");

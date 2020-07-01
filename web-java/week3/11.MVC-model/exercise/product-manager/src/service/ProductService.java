@@ -18,4 +18,6 @@ public interface ProductService {
   void remove(int id);
 
   List<Product> sortBy(String searchCategory);
+
+  List<String> categoryList();
 }

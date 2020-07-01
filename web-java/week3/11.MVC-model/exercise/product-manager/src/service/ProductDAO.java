@@ -12,27 +12,47 @@ public class ProductDAO implements ProductService{
     private String jdbcUsername = "long";
     private String jdbcURL = "jdbc:mysql://localhost:3306/demo";
     private static final String SELECT_ALL_PRODUCT = "SELECT * FROM demo.products";
-    private static final String SORT_BY_A_CATEGORY = "SELECT id,productName,category, price FROM " +
+    private static final String SORT_BY_A_CATEGORY = "SELECT " +
+            "id,productName, price, quantity,color,description,category FROM " +
             "demo.products ORDER BY %s";
-    private static final String SELECT_PRODUCT_BY_ID = "SELECT id, productName, category, price " +
+    private static final String SELECT_PRODUCT_BY_ID = "SELECT " +
+            "id, " +
+            "productName," +
+            "price," +
+            "quantity, " +
+            "color, " +
+            "description, " +
+            "category " +
             "FROM demo.products WHERE id = ?";
     private static final String SEARCH_PRODUCT_BY_PRODUCT_NAME = "SELECT " +
             "id, " +
             "productName," +
-            "category," +
-            "price " +
+            "price," +
+            "quantity, " +
+            "color, " +
+            "description, " +
+            "category " +
             "FROM demo.products WHERE productName LIKE ?";
+
     private static final String INSERT_PRODUCT = "INSERT INTO demo.products (" +
             "productName," +
-            "category," +
-            "price" +
+            "price," +
+            "quantity, " +
+            "color, " +
+            "description, " +
+            "category" +
             ") " +
-            "VALUES (?,?,?);";
+            "VALUES (?,?,?,?,?,?);";
+
     private static final String DELETE_PRODUCT = "DELETE FROM demo.products WHERE ID = ?";
     private static final String UPDATE_USER = "UPDATE demo.products " +
-            "SET productName = ?, " +
-            "category = ?, " +
-            "price = ? " +
+            "SET " +
+            "productName = ?, " +
+            "price = ?, " +
+            "quantity = ?, " +
+            "color = ?, " +
+            "description = ?, " +
+            "category = ? " +
             "WHERE id = ?";
     public ProductDAO() {
     }
@@ -63,9 +83,12 @@ public class ProductDAO implements ProductService{
             while (rs.next()) {
                 int id = rs.getInt("id");
                 String productName = rs.getString("productName");
-                String category = rs.getString("category");
                 int price = rs.getInt("price");
-                products.add(new Product(id,productName,category,price));
+                int quantity = rs.getInt("quantity");
+                String color = rs.getString("color");
+                String description = rs.getString("description");
+                String category = rs.getString("category");
+                products.add(new Product(id,productName,price,quantity,color,description,category));
             }
 
         } catch (SQLException exception) {
@@ -76,7 +99,7 @@ public class ProductDAO implements ProductService{
 
     @Override
     public List<Product> findByName(String nameToFind) {
-        List<Product> product = new ArrayList<>();
+        List<Product> foundProducts = new ArrayList<>();
         try (
                 Connection connection = getConnection();
                 PreparedStatement preparedStatement = connection.prepareStatement(SEARCH_PRODUCT_BY_PRODUCT_NAME);
@@ -89,28 +112,34 @@ public class ProductDAO implements ProductService{
             while(rs.next()) {
                 int id = rs.getInt("id");
                 String productName = rs.getString("productName");
-                String category = rs.getString("category");
                 int price = rs.getInt("price");
-                product.add(new Product(id,productName,category,price));
+                int quantity = rs.getInt("quantity");
+                String color = rs.getString("color");
+                String description = rs.getString("description");
+                String category = rs.getString("category");
+                foundProducts.add(new Product(id,productName,price,quantity,color,description,category));
             }
 
         } catch (SQLException exception) {
             exception.printStackTrace();
         }
-        return product;
+        return foundProducts;
     }
 
     @Override
     public void add(Product product) {
         System.out.println(INSERT_PRODUCT);
         try (
-                Connection connection = getConnection(); PreparedStatement preparedStatement =
-                connection.prepareStatement(INSERT_PRODUCT)
+                Connection connection = getConnection(); CallableStatement callableStatement =
+                connection.prepareCall(INSERT_PRODUCT)
         ) {
-            preparedStatement.setString(1,product.getProductName());
-            preparedStatement.setString(2,product.getCategory());
-            preparedStatement.setInt(3,product.getPrice());
-            preparedStatement.executeUpdate();
+            callableStatement.setString(1,product.getProductName());
+            callableStatement.setInt(2,product.getPrice());
+            callableStatement.setInt(3,product.getQuantity());
+            callableStatement.setString(4,product.getColor());
+            callableStatement.setString(5,product.getDescription());
+            callableStatement.setString(6,product.getCategory());
+            callableStatement.executeUpdate();
         } catch (SQLException exception) {
             exception.printStackTrace();
         }
@@ -130,9 +159,12 @@ public class ProductDAO implements ProductService{
 
            while(rs.next()) {
                String productName = rs.getString("productName");
-               String category = rs.getString("category");
                int price = rs.getInt("price");
-               product = new Product(id,productName,category,price);
+               int quantity = rs.getInt("quantity");
+               String color = rs.getString("color");
+               String description = rs.getString("description");
+               String category = rs.getString("category");
+               product = new Product(id,productName,price,quantity,color,description,category);
            }
 
         } catch (SQLException exception) {
@@ -146,9 +178,12 @@ public class ProductDAO implements ProductService{
         try (Connection connection = getConnection();
         PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_USER);) {
             preparedStatement.setString(1,product.getProductName());
-            preparedStatement.setString(2,product.getCategory());
-            preparedStatement.setInt(3,product.getPrice());
-            preparedStatement.setInt(4,id);
+            preparedStatement.setInt(2,product.getPrice());
+            preparedStatement.setInt(3,product.getQuantity());
+            preparedStatement.setString(4,product.getColor());
+            preparedStatement.setString(5,product.getDescription());
+            preparedStatement.setString(6,product.getCategory());
+            preparedStatement.setInt(7,id);
             preparedStatement.executeUpdate();
         } catch (SQLException exception) {
             exception.printStackTrace();
@@ -184,14 +219,22 @@ public class ProductDAO implements ProductService{
             while(rs.next()) {
                 int id = rs.getInt("id");
                 String productName = rs.getString("productName");
-                String category = rs.getString("category");
                 int price = rs.getInt("price");
-                sortedProducts.add(new Product(id,productName,category,price));
+                int quantity = rs.getInt("quantity");
+                String color = rs.getString("color");
+                String description = rs.getString("description");
+                String category = rs.getString("category");
+                sortedProducts.add(new Product(id,productName,price,quantity,color,description,category));
             }
 
         } catch (SQLException exception) {
             exception.printStackTrace();
         }
         return sortedProducts;
+    }
+
+    @Override
+    public List<String> categoryList() {
+        return null;
     }
 }

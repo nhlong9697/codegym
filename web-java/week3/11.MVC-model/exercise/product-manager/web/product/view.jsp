@@ -18,12 +18,22 @@
         <td>${requestScope.product.getProductName()}</td>
     </tr>
     <tr>
-        <td>Category: </td>
-        <td>${requestScope.product.getCategory()}</td>
-    </tr>
-    <tr>
         <td>Price: </td>
         <td>${requestScope.product.getPrice()}</td>
+    </tr>
+    <tr>
+        <td>Quantity: </td>
+        <td>${requestScope.product.getQuantity()}</td>
+    </tr><tr>
+        <td>Price: </td>
+        <td>${requestScope.product.getColor()}</td>
+    </tr><tr>
+        <td>Price: </td>
+        <td>${requestScope.product.getDescription()}</td>
+    </tr>
+    <tr>
+        <td>Category: </td>
+        <td>${requestScope.product.getCategory()}</td>
     </tr>
 </table>
 </body>

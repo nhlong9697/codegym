@@ -1,7 +1,7 @@
 package test;
 
-import main.org.usefullibs.greeter.Greeter;
-import main.org.usefullibs.greeter.impl.HelloWorld;
+import Greeter;
+import impl.HelloWorld;
 
 public class HelloWorldTest {
     public void testGreet() {
