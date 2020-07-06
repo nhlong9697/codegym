@@ -5,12 +5,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "a", urlPatterns = "/")
+@WebServlet(name = "HomeServlet", urlPatterns = "/home")
 public class HomeServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setCharacterEncoding("UTF-8");
         resp.setContentType("text/html");
-        resp.getOutputStream().print("Hello");
     }
 }
