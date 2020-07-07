@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0caaf1d5-2a4f-44b3-b04a-976c76f52a44" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../advance-java/week2/8.Clean-code-and-refactor/exercise/java-cleancode-refactoring-exercise" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../advance-java/week2/8.Clean-code-and-refactor/exercise/java-cleancode-refactoring-exercise" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-method-extraction" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-method-extraction" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-renaming" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-renaming" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-variable-extraction" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-variable-extraction" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../advance-java/week2/9.Automate-testing-and-TDD/practice/junit-simple-calculator" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../advance-java/week2/9.Automate-testing-and-TDD/practice/junit-simple-calculator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/cms/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../practice/cms/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/cms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../practice/cms/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/spring-time-zone/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../practice/spring-time-zone/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/spring-time-zone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../practice/spring-time-zone/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1eJA19YM0tnLnZO4ztzvEkQIxrI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0caaf1d5-2a4f-44b3-b04a-976c76f52a44" name="Default Changelist" comment="" />
+      <created>1594029103639</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594029103639</updated>
+      <workItem from="1594029107324" duration="78000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="27" width="1356" height="737" key="new project wizard" timestamp="1594029181614">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="0" y="27" width="1356" height="737" key="new project wizard/0.27.1366.741@0.27.1366.741" timestamp="1594029181614" />
+  </component>
+</project>
