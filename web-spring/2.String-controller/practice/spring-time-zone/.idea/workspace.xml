@@ -23,55 +23,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="126b14bb-f64c-40df-9131-9412c1ba7a38" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/.gradle/6.1.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/.gradle/6.1.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/src/main/java/controller/CondimentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/src/main/webapp/WEB-INF/views/success.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/condiment/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/sandwich-condiments/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/sandwich-condiments/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/sandwich-condiments/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/sandwich-condiments/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/sandwich-condiments/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/sandwich-condiments/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/sandwich-condiments/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/sandwich-condiments/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/sandwich-condiments/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercise/sandwich-condiments/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.Data-binding-and-form/practice/login-form/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.Data-binding-and-form/practice/login-form/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.Data-binding-and-form/practice/login-form/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.Data-binding-and-form/practice/login-form/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.Data-binding-and-form/practice/login-form/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.Data-binding-and-form/practice/login-form/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.Data-binding-and-form/practice/login-form/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.Data-binding-and-form/practice/login-form/src/main/java/com/login/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.Data-binding-and-form/practice/login-form/src/main/java/com/login/model/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.Data-binding-and-form/practice/login-form/src/main/java/com/login/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.Data-binding-and-form/practice/login-form/src/main/java/com/login/service/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.Data-binding-and-form/practice/login-form/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.Data-binding-and-form/practice/login-form/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.Data-binding-and-form/practice/login-form/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.Data-binding-and-form/practice/login-form/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.Data-binding-and-form/practice/login/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.Data-binding-and-form/practice/login/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.Data-binding-and-form/practice/login/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.Data-binding-and-form/practice/login/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.Data-binding-and-form/practice/login/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.Data-binding-and-form/practice/login/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.Data-binding-and-form/practice/login/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.Data-binding-and-form/practice/login/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.Data-binding-and-form/practice/login/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.Data-binding-and-form/practice/login/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.Data-binding-and-form/practice/login/src/main/java/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.Data-binding-and-form/practice/login/src/main/java/AppInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../advance-java/week2/8.Clean-code-and-refactor/exercise/java-cleancode-refactoring-exercise" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../advance-java/week2/8.Clean-code-and-refactor/exercise/java-cleancode-refactoring-exercise" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-method-extraction" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-method-extraction" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-renaming" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-renaming" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-variable-extraction" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-variable-extraction" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../advance-java/week2/9.Automate-testing-and-TDD/practice/junit-simple-calculator" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../advance-java/week2/9.Automate-testing-and-TDD/practice/junit-simple-calculator" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cms/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cms/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3.View-and-Thymeleaf/practice/customer-manager/src/main/java/com/manager/service/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3.View-and-Thymeleaf/practice/customer-manager/src/main/java/com/manager/service/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3.View-and-Thymeleaf/practice/customer-manager/src/main/java/com/manager/service/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3.View-and-Thymeleaf/practice/customer-manager/src/main/java/com/manager/service/ICustomerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,6 +184,7 @@
       <updated>1594022827372</updated>
       <workItem from="1594022832337" duration="1204000" />
       <workItem from="1594028274178" duration="2726000" />
+      <workItem from="1594191059787" duration="95000" />
     </task>
     <servers />
   </component>
@@ -277,9 +263,13 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1324" height="178" key="GridCell.Tab.2.right/0.27.1366.741@0.27.1366.741" timestamp="1594024195920" />
-    <state x="297" y="27" width="762" height="737" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594023325480">
+    <state x="297" y="27" width="762" height="737" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594191140106">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="297" y="27" width="762" height="737" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1366.741@0.27.1366.741" timestamp="1594023325480" />
+    <state x="297" y="27" width="762" height="737" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1366.741@0.27.1366.741" timestamp="1594191140106" />
+    <state x="171" y="85" width="1014" height="621" key="spring file set editor" timestamp="1594191146353">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="171" y="85" width="1014" height="621" key="spring file set editor/0.27.1366.741@0.27.1366.741" timestamp="1594191146353" />
   </component>
 </project>

@@ -1,7 +1,6 @@
 package com.manager.service;
 
 import com.manager.model.Customer;
-import org.springframework.stereotype.Component;
 
 import java.util.List;
 
