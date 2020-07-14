@@ -17,11 +17,12 @@ public class HibernateCustomerServiceImpl implements CustomerService {
     private static EntityManager entityManager;
     static {
         try {
-            SessionFactory sessionFactory =
-                    new Configuration().configure("hibernate.conf.xml").buildSessionFactory();
+            sessionFactory = new Configuration()
+                    .configure("hibernate.conf.xml")
+                    .buildSessionFactory();
             entityManager = sessionFactory.createEntityManager();
-        } catch (HibernateException exception) {
-            exception.printStackTrace();
+        } catch (HibernateException e) {
+            e.printStackTrace();
         }
     }
 
@@ -43,20 +44,26 @@ public class HibernateCustomerServiceImpl implements CustomerService {
 
     @Override
     public Customer save(Customer customer) {
+        Session session = null;
         Transaction transaction = null;
-        try (Session session = sessionFactory.openSession()) {
+        try {
+            session = sessionFactory.openSession();
             transaction = session.beginTransaction();
-            Customer customerToSave = findOne(customer.getId());
-            customerToSave.setName(customer.getName());
-            customerToSave.setEmail(customer.getEmail());
-            customerToSave.setAddress(customer.getAddress());
-            session.saveOrUpdate(customerToSave);
+            Customer origin = findOne(customer.getId());
+            origin.setName(customer.getName());
+            origin.setEmail(customer.getEmail());
+            origin.setAddress(customer.getAddress());
+            session.saveOrUpdate(origin);
             transaction.commit();
-            return customerToSave;
-        } catch (Exception exception) {
-            exception.printStackTrace();
+            return origin;
+        } catch (Exception e) {
+            e.printStackTrace();
             if (transaction != null) {
                 transaction.rollback();
+            }
+        } finally {
+            if (session != null) {
+                session.close();
             }
         }
         return null;
