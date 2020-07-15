@@ -1,8 +1,11 @@
 package com.library;
 
 import com.library.concern.Logger;
+import com.library.formatter.BookFormatter;
+import com.library.service.IUserService;
 import com.library.service.impl.BookServiceImpl;
 import com.library.service.IBookService;
+import com.library.service.impl.UserServiceImpl;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.context.ApplicationContext;
@@ -13,6 +16,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.data.web.config.EnableSpringDataWebSupport;
+import org.springframework.format.FormatterRegistry;
+import org.springframework.format.Formatter;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
@@ -79,6 +84,11 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
         return new BookServiceImpl();
     }
 
+    @Bean
+    public IUserService userService() {
+        return new UserServiceImpl();
+    }
+
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
@@ -120,6 +130,12 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
         return transactionManager;
     }
 
+    @Override
+    public void addFormatters(FormatterRegistry registry) {
+        IBookService bookService = appContext.getBean(IBookService.class);
+        Formatter bookFormatter = new BookFormatter(bookService);
+        registry.addFormatter(bookFormatter);
+    }
 
     @Bean
     public Logger logger() {

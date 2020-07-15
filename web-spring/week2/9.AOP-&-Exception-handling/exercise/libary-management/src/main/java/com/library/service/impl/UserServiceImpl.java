@@ -1,4 +1,6 @@
 package com.library.service.impl;
 
-public class UserServiceImpl {
+import com.library.service.IUserService;
+
+public class UserServiceImpl implements IUserService {
 }
