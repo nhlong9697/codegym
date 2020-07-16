@@ -1,4 +1,6 @@
 package com.cms.repository;
 
-public interface ICustomerRepository {
+import com.cms.model.Customer;
+
+public interface ICustomerRepository extends IRepository<Customer>{
 }
