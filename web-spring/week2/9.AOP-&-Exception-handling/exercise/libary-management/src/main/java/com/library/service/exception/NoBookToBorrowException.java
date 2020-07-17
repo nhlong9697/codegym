@@ -1,4 +1,4 @@
 package com.library.service.exception;
 
-public class NoBookToBorrowException {
+public class NoBookToBorrowException extends Exception{
 }

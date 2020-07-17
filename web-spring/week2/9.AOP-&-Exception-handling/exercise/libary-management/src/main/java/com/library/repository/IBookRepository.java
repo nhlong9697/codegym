@@ -1,4 +1,7 @@
 package com.library.repository;
 
-public interface IBookRepository {
+import com.library.model.Book;
+import org.springframework.data.repository.PagingAndSortingRepository;
+
+public interface IBookRepository extends PagingAndSortingRepository<Book, Long> {
 }

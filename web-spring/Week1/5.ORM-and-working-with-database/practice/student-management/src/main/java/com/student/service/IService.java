@@ -10,4 +10,6 @@ public interface IService<T> {
     void save(T model);
 
     void remove(Long id);
+
+    void update(T model);
 }
