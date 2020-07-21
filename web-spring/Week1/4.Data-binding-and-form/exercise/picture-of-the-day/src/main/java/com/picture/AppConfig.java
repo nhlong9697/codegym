@@ -45,10 +45,10 @@ public class AppConfig extends WebMvcConfigurerAdapter implements ApplicationCon
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         this.applicationContext = applicationContext;
     }
-//    @Bean
-//    public ICommentService customerRepository(){
-//        return new HibernateCommentServiceImpl();
-//    }
+    @Bean
+    public ICommentService customerRepository(){
+        return new HibernateCommentServiceImpl();
+    }
 
 
     @Bean
@@ -110,7 +110,7 @@ public class AppConfig extends WebMvcConfigurerAdapter implements ApplicationCon
 
     Properties additionalProperties() {
         Properties properties = new Properties();
-        properties.setProperty("hibernate.hbm2ddl.auto", "create");
+        properties.setProperty("hibernate.hbm2ddl.auto", "update");
         properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
         return properties;
     }

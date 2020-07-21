@@ -1,10 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Edit phone</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(() => {
+            $('#smartphoneEditForm').submit((event) => {
+                let producer = $('#producer').val();
+                let model = $('#model').val();
+                let price = $('#price').val();
+                let json = {"producer": producer, "model": model, "price":price};
+                $.ajax({
+                    url:$("#smartphoneEditForm").attr("action"),
+                    data:JSON.stringify(json),
+                    type:"POST",
+                    beforeSend: (xhr) => {
+                        xhr.setRequestHeader("Accept","application/json");
+                        xhr.setRequestHeader("Content-Type", "application/json");
+                    },
+                    success:(smartphone) => {
+                        let resContent = "";
+                        resContent += "<span class='success'>Smartphone was edited: [";
+                        resContent += smartphone.producer + " : ";
+                        resContent += smartphone.model + " : ";
+                        resContent += smartphone.price + "]</span>";
+                        $("#smartphoneResponseForm").html(resContent);
+                    }
+                })
+                event.preventDefault();
+            })
+        })
+    </script>
 </head>
 <body>
-$END$
+<div id="container">
+    <h1>Edit smartphone</h1>
+    <div>
+        <p>Here you can edit Smartphone info:</p>
+        <div id="smartphoneResponseForm"></div>
+    </div>
+    <form id="smartphoneEditForm" th:object="${smartphone}">
+        <table>
+            <tbody>
+            <tr>
+                <td>Producer: </td>
+                <td>
+                    <select name="" id="producer" th:field="*{producer}">
+                        <option value="NOKIA">Nokia</option>
+                        <option value="IPHONE" selected="selected">iPhone</option>
+                        <option value="HTC">HTC</option>
+                        <option value="SAMSUNG">Samsung</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Model:</td>
+                <td><input type="text" id="model" th:field="*{model}"></td>
+            </tr>
+            <tr>
+                <td>Price:</td>
+                <td><input type="text" id="price" th:field="*{price}"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Edit"></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+    <a href="#" th:href="@{/smartphones}">List</a>
+</div>
 </body>
 </html>

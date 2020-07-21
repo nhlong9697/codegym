@@ -47,19 +47,18 @@ public class HibernateCommentServiceImpl implements ICommentService {
 
     @Override
     public void save(Comment comment) {
-        entityManager.getTransaction().begin();
-        entityManager.persist(comment);
-        entityManager.getTransaction().commit();
-
+        if (comment.getId() != null) {
+            entityManager.merge(comment);
+        } else {
+            entityManager.persist(comment);
+        }
     }
 
     @Override
     public void addLike(Long id) {
-        entityManager.getTransaction().begin();
-        String queryStr = "UPDATE Comment SET likes = likes + 1 WHERE id = :id";
-        Query query = entityManager.createQuery(queryStr);
-        query.setParameter("id",id);
-        query.executeUpdate();
-        entityManager.getTransaction().commit();
+        Comment comment = findOne(id);
+        comment.setLikes(comment.getLikes() + 1);
+        save(comment);
     }
+
 }
