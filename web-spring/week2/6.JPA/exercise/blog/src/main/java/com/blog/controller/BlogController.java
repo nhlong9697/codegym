@@ -41,6 +41,18 @@ public class BlogController {
         return modelAndView;
     }
 
+    @GetMapping("/view-blog/{id}")
+    public ModelAndView showBlog(@PathVariable Long id) {
+        Blog blog = blogService.findById(id);
+        if(blog != null) {
+            ModelAndView modelAndView = new ModelAndView("/blog/view");
+            modelAndView.addObject("blog", blog);
+            return modelAndView;
+
+        }else {
+            return new ModelAndView("/error.404");
+        }
+    }
     @GetMapping("/edit-blog/{id}")
     public ModelAndView showEditForm(@PathVariable Long id){
         Blog blog = blogService.findById(id);

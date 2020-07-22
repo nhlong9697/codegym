@@ -1,6 +1,8 @@
 package com.picture;
 
-import com.picture.service.HibernateCommentServiceImpl;
+import com.picture.repository.CommentRepositoryImpl;
+import com.picture.repository.ICommentRepository;
+import com.picture.service.CommentServiceImpl;
 import com.picture.service.ICommentService;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -9,7 +11,6 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
@@ -28,16 +29,12 @@ import org.thymeleaf.templatemode.TemplateMode;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
-import java.sql.Driver;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.util.Enumeration;
 import java.util.Properties;
+
 @Configuration
 @EnableWebMvc
 @EnableTransactionManagement
 @ComponentScan("com.picture")
-@EnableJpaRepositories("com.picture")
 public class AppConfig extends WebMvcConfigurerAdapter implements ApplicationContextAware {
     private ApplicationContext applicationContext;
 
@@ -45,9 +42,14 @@ public class AppConfig extends WebMvcConfigurerAdapter implements ApplicationCon
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         this.applicationContext = applicationContext;
     }
+
     @Bean
-    public ICommentService customerRepository(){
-        return new HibernateCommentServiceImpl();
+    public ICommentService commentService(){
+        return new CommentServiceImpl();
+    }
+    @Bean
+    public ICommentRepository commentRepository() {
+        return new CommentRepositoryImpl();
     }
 
 
@@ -55,7 +57,7 @@ public class AppConfig extends WebMvcConfigurerAdapter implements ApplicationCon
     public SpringResourceTemplateResolver templateResolver(){
         SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
         templateResolver.setApplicationContext(applicationContext);
-        templateResolver.setPrefix("/WEB-INF/views");
+        templateResolver.setPrefix("/WEB-INF/views/");
         templateResolver.setSuffix(".html");
         templateResolver.setTemplateMode(TemplateMode.HTML);
         return templateResolver;
@@ -75,7 +77,6 @@ public class AppConfig extends WebMvcConfigurerAdapter implements ApplicationCon
     }
     //JPA configuration
     @Bean
-    @Qualifier(value = "entityManager")
     public EntityManager entityManager(EntityManagerFactory entityManagerFactory) {
         return entityManagerFactory.createEntityManager();
     }
@@ -95,7 +96,7 @@ public class AppConfig extends WebMvcConfigurerAdapter implements ApplicationCon
     public DataSource dataSource(){
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/cms");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/demo");
         dataSource.setUsername("long");
         dataSource.setPassword("Long12345^");
         return dataSource;

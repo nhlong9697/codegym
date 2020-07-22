@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>View blog</title>
 </head>
 <body>
-$END$
+<h1>View blog</h1>
+<p>
+    <a href="/">Blog list</a>
+</p>
+<h1 th:text="${blog.title}"></h1>
+<h2 th:text="${blog.author}"></h2>
+<p th:text="${blog.content}"></p>
 </body>
 </html>

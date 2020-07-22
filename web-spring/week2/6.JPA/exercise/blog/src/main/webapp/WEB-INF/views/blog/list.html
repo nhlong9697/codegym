@@ -26,7 +26,7 @@
     </tr>
     <th:block th:each="blog : ${blogs}">
         <tr>
-            <td th:text="${blog.id}"></td>
+            <td><a href="" th:href="@{/view-blog/{id}(id=${blog.id})}" th:text="${blog.id}"></a></td>
             <td th:text="${blog.title}"></td>
             <td th:text="${blog.author}"></td>
             <td th:text="${blog.content}" class="ellipsis"></td>

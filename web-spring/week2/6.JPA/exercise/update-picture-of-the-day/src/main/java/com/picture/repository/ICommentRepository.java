@@ -1,4 +1,6 @@
 package com.picture.repository;
 
-public interface ICommentRepository {
+import com.picture.model.Comment;
+
+public interface ICommentRepository extends IRepository<Comment>{
 }
