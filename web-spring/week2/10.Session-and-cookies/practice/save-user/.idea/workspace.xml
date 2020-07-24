@@ -20,60 +20,70 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d816fb7f-9624-412b-8343-25fcc48051a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/src/main/java/com/student/model/StudentForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/src/main/resources/uploadfile.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/src/main/webapp/WEB-INF/views/student/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/user/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/user/AppInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/user/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/user/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/src/main/java/com/blog/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/src/main/java/com/blog/ApplicationInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/src/main/java/com/blog/controller/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/src/main/java/com/blog/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/src/main/java/com/blog/formatter/CategoryFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/src/main/java/com/blog/model/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/src/main/java/com/blog/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/src/main/java/com/blog/repository/BlogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/src/main/java/com/blog/repository/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/src/main/java/com/blog/service/BlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/src/main/java/com/blog/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/src/main/java/com/blog/service/impl/BlogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/src/main/java/com/blog/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/src/main/webapp/WEB-INF/views/blog/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/src/main/webapp/WEB-INF/views/blog/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/src/main/webapp/WEB-INF/views/blog/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/src/main/webapp/WEB-INF/views/blog/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/src/main/webapp/WEB-INF/views/blog/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/src/main/webapp/WEB-INF/views/category/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/src/main/webapp/WEB-INF/views/category/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/src/main/webapp/WEB-INF/views/category/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/src/main/webapp/WEB-INF/views/category/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/src/main/webapp/WEB-INF/views/category/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-blog-jpa-data-repo/src/main/webapp/WEB-INF/views/error.404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-picture-data-jpa/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-picture-data-jpa/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-picture-data-jpa/src/main/java/com/picture/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-picture-data-jpa/src/main/java/com/picture/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-picture-data-jpa/src/main/java/com/picture/controller/CommentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-picture-data-jpa/src/main/java/com/picture/model/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-picture-data-jpa/src/main/java/com/picture/repository/CommentRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-picture-data-jpa/src/main/java/com/picture/repository/ICommentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-picture-data-jpa/src/main/java/com/picture/repository/IRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-picture-data-jpa/src/main/java/com/picture/service/CommentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-picture-data-jpa/src/main/java/com/picture/service/ICommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-picture-data-jpa/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../7.Spring-data-repository/exercise/update-picture-data-jpa/src/main/webapp/WEB-INF/views/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../advance-java/week2/8.Clean-code-and-refactor/exercise/java-cleancode-refactoring-exercise" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../advance-java/week2/8.Clean-code-and-refactor/exercise/java-cleancode-refactoring-exercise" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-method-extraction" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-method-extraction" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-renaming" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-renaming" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-variable-extraction" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-variable-extraction" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../advance-java/week2/9.Automate-testing-and-TDD/practice/junit-simple-calculator" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../advance-java/week2/9.Automate-testing-and-TDD/practice/junit-simple-calculator" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/build/classes/java/main/com/student/config/AppConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/build/classes/java/main/com/student/config/AppInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/build/classes/java/main/com/student/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/build/classes/java/main/com/student/controller/StudentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/build/classes/java/main/com/student/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/build/classes/java/main/com/student/model/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/build/classes/java/main/com/student/service/IService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/build/classes/java/main/com/student/service/IService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/build/classes/java/main/com/student/service/student/StudentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/src/main/java/com/student/config/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/src/main/java/com/student/config/AppConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/src/main/java/com/student/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/src/main/java/com/student/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/src/main/java/com/student/service/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/src/main/java/com/student/service/IService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/src/main/java/com/student/service/student/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management/src/main/java/com/student/service/student/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../9.AOP-&amp;-Exception-handling/exercise/libary-management/src/main/java/com/library/repository/IBookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../9.AOP-&amp;-Exception-handling/exercise/libary-management/src/main/java/com/library/repository/IBookRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../9.AOP-&amp;-Exception-handling/exercise/libary-management/src/main/java/com/library/service/IBookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../9.AOP-&amp;-Exception-handling/exercise/libary-management/src/main/java/com/library/service/IBookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../9.AOP-&amp;-Exception-handling/exercise/libary-management/src/main/java/com/library/service/exception/NoBookToBorrowException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../9.AOP-&amp;-Exception-handling/exercise/libary-management/src/main/java/com/library/service/exception/NoBookToBorrowException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../9.AOP-&amp;-Exception-handling/exercise/libary-management/src/main/java/com/library/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../9.AOP-&amp;-Exception-handling/exercise/libary-management/src/main/java/com/library/service/impl/BookServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../week3/11.Web-serivce-&amp;-RESTful-API/practice/customer-management/src/main/java/com/cms/repository/impl/CustomerRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6.JPA/exercise/update-picture-of-the-day/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6.JPA/exercise/update-picture-of-the-day/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6.JPA/exercise/update-picture-of-the-day/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6.JPA/exercise/update-picture-of-the-day/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6.JPA/exercise/update-picture-of-the-day/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6.JPA/exercise/update-picture-of-the-day/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6.JPA/exercise/update-picture-of-the-day/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6.JPA/exercise/update-picture-of-the-day/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6.JPA/exercise/update-picture-of-the-day/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6.JPA/exercise/update-picture-of-the-day/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6.JPA/exercise/update-picture-of-the-day/src/main/java/com/picture/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6.JPA/exercise/update-picture-of-the-day/src/main/java/com/picture/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6.JPA/exercise/update-picture-of-the-day/src/main/java/com/picture/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6.JPA/exercise/update-picture-of-the-day/src/main/java/com/picture/controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6.JPA/exercise/update-picture-of-the-day/src/main/webapp/WEB-INF/views/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6.JPA/exercise/update-picture-of-the-day/src/main/webapp/WEB-INF/views/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../week3/14.Web-security-in-Spring/practice/spring-security/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../week3/14.Web-security-in-Spring/practice/spring-security/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../week3/14.Web-security-in-Spring/practice/spring-security/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../week3/14.Web-security-in-Spring/practice/spring-security/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../week3/14.Web-security-in-Spring/practice/spring-security/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../week3/14.Web-security-in-Spring/practice/spring-security/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../week3/14.Web-security-in-Spring/practice/spring-security/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../week3/14.Web-security-in-Spring/practice/spring-security/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../week3/14.Web-security-in-Spring/practice/spring-security/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../week3/14.Web-security-in-Spring/practice/spring-security/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../week3/14.Web-security-in-Spring/practice/spring-security/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../week3/14.Web-security-in-Spring/practice/spring-security/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../week3/14.Web-security-in-Spring/practice/spring-security/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../week3/14.Web-security-in-Spring/practice/spring-security/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../week3/14.Web-security-in-Spring/practice/spring-security/build/classes/java/main/com/security/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../week3/14.Web-security-in-Spring/practice/spring-security/build/classes/java/main/com/security/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../week3/14.Web-security-in-Spring/practice/spring-security/build/libs/spring-security-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../week3/14.Web-security-in-Spring/practice/spring-security/build/libs/spring-security-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../week3/14.Web-security-in-Spring/practice/spring-security/src/main/java/com/security/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../week3/14.Web-security-in-Spring/practice/spring-security/src/main/java/com/security/controller/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +126,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Week1/5.ORM-and-working-with-database/practice/student-management" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../week3/11.Web-serivce-&amp;-RESTful-API/practice/customer-management" />
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.36" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.36" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
@@ -185,6 +195,7 @@
       <option name="presentableId" value="Default" />
       <updated>1594882649437</updated>
       <workItem from="1594882654686" duration="6496000" />
+      <workItem from="1595521291665" duration="20000" />
     </task>
     <servers />
   </component>
@@ -201,6 +212,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -214,10 +226,10 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="491" y="116" width="374" height="558" key="#com.intellij.ide.util.MemberChooser/0.27.1366.741@0.27.1366.741" timestamp="1594883012758" />
-    <state x="466" y="155" width="424" height="480" key="FileChooserDialogImpl" timestamp="1594889105872">
+    <state x="466" y="155" width="424" height="480" key="FileChooserDialogImpl" timestamp="1595521309563">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="466" y="155" width="424" height="480" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1594889105872" />
+    <state x="466" y="155" width="424" height="480" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1595521309563" />
     <state width="1324" height="177" key="GridCell.Tab.0.bottom" timestamp="1594914622756">
       <screen x="0" y="27" width="1366" height="741" />
     </state>

@@ -20,6 +20,11 @@ public class UserController {
         return "user";
     }
 
+    @GetMapping("/authenticate/login")
+    public String login() {
+        return "login";
+    }
+
     @GetMapping("/admin")
     public String admin() {
         // Get authenticated user name from SecurityContext
