@@ -5,14 +5,15 @@ import com.blog.model.Category;
 import com.blog.service.BlogService;
 import com.blog.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.List;
+import java.util.Optional;
 
 @Controller
 public class BlogController {
@@ -27,8 +28,16 @@ public class BlogController {
         return categoryService.findAll();
     }
     @GetMapping("/")
-    public ModelAndView listBlog() {
-        Iterable<Blog> blogs = blogService.findAll();
+    public ModelAndView listBlog(
+            @RequestParam("search") Optional<String> search,
+            @PageableDefault(size = 3, direction = Sort.Direction.DESC, sort = "id") Pageable pageable
+    ) {
+        Page<Blog> blogs;
+        if (search.isPresent()) {
+            blogs = blogService.findAllByTitleContaining(search.get(),pageable);
+        } else {
+            blogs = blogService.findAll(pageable);
+        }
         ModelAndView modelAndView = new ModelAndView("blog/list");
         modelAndView.addObject("blogs",blogs);
         return modelAndView;

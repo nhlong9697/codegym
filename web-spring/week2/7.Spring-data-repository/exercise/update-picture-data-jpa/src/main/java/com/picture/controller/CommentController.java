@@ -3,6 +3,9 @@ package com.picture.controller;
 import com.picture.model.Comment;
 import com.picture.service.ICommentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
@@ -16,9 +19,9 @@ public class CommentController {
     private ICommentService commentService;
 
     @GetMapping("/")
-    public ModelAndView showComments() {
+    public ModelAndView showComments(@PageableDefault(size = 3) Pageable pageable) {
         ModelAndView modelAndView = new ModelAndView("list");
-        List<Comment> comments = commentService.findAll();
+        Page<Comment> comments = commentService.findAll(pageable);
         modelAndView.addObject("comments",comments);
         modelAndView.addObject("test","tiếng việt");
         modelAndView.addObject("newComment", new Comment());
