@@ -16,6 +16,7 @@ import java.util.Collection;
 
 @Service
 @Transactional
+
 public class CustomUserDetailsService implements UserDetailsService {
 
     @Autowired

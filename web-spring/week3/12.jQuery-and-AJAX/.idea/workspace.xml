@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:upstream" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9d64a3b8-56a8-4287-a096-400bfabd692e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../15.Authorization/exercise/spring-security-mysql-demo/src/main/webapp/WEB-INF/views/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../week4/18.Spring-boot-starter-and-common-configuration/practice/cms/src/main/webapp/WEB-INF/templates/info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../week4/18.Spring-boot-starter-and-common-configuration/practice/cms/src/main/webapp/WEB-INF/templates/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../advance-java/week2/8.Clean-code-and-refactor/exercise/java-cleancode-refactoring-exercise" beforeDir="false" afterPath="$PROJECT_DIR$/../../../advance-java/week2/8.Clean-code-and-refactor/exercise/java-cleancode-refactoring-exercise" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-method-extraction" beforeDir="false" afterPath="$PROJECT_DIR$/../../../advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-method-extraction" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-renaming" beforeDir="false" afterPath="$PROJECT_DIR$/../../../advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-renaming" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-variable-extraction" beforeDir="false" afterPath="$PROJECT_DIR$/../../../advance-java/week2/8.Clean-code-and-refactor/practice/java-cleancode-refactoring-variable-extraction" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../advance-java/week2/9.Automate-testing-and-TDD/practice/junit-simple-calculator" beforeDir="false" afterPath="$PROJECT_DIR$/../../../advance-java/week2/9.Automate-testing-and-TDD/practice/junit-simple-calculator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../15.Authorization/exercise/spring-security-mysql-demo/src/main/java/com/codegym/cms/controller/SecurityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../15.Authorization/exercise/spring-security-mysql-demo/src/main/java/com/codegym/cms/controller/SecurityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../15.Authorization/exercise/spring-security-mysql-demo/src/main/java/com/codegym/cms/service/AuthenticatedUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../15.Authorization/exercise/spring-security-mysql-demo/src/main/java/com/codegym/cms/service/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../15.Authorization/exercise/spring-security-mysql-demo/src/main/java/com/codegym/cms/service/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week4/19.Deployment-and-CI-CD/practice/spring-blog/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week4/19.Deployment-and-CI-CD/practice/spring-blog/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week4/19.Deployment-and-CI-CD/practice/spring-blog/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week4/19.Deployment-and-CI-CD/practice/spring-blog/.idea/spring-blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week4/19.Deployment-and-CI-CD/practice/spring-blog/.idea/spring-blog.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1fZI1F65NplyQrE2FWZlRSRuwu7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9d64a3b8-56a8-4287-a096-400bfabd692e" name="Default Changelist" comment="" />
+      <created>1596418971311</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596418971311</updated>
+      <workItem from="1596418973225" duration="709000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
