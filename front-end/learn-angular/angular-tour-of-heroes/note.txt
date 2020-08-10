@@ -1,0 +1,42 @@
+1.
+Angular apps are made of components
+
+generate component by the command: ng generate component [component-name]
+
+in the ts file of the component you will find @Component annotation
+
+selector: is the name of the tag 'app-heroes' => tag to use component is <app-hero> or ingeneral <selector></selector>
+templateUrl: is the relative position of html file of the component or in other words how the component would be display in html
+styleUrl is the private css file of the component
+
+you can add the property of the component by declaring 
+hero = 'hero name';
+or hero: Hero interface or string to declare property with the value type is Hero or string
+
+display the property of the component in templateUrl by {{property}}
+
+=> use it on the main app as the following tag <selector><selector/>
+
+you can declare an interface by create a ts file with the following syntax
+
+export key word will allow other component to import the interface
+
+export interface interface_name {
+  property:property_value_type;
+  id:int;
+  name:string;
+}
+
+import syntax is 
+import { property_with_export_keyword } from 'relative_file_position_without)file_extension'
+
+if property is an object you can get the property of an object through "." in templateUrl
+
+{{object.id}} or {{hero.name}}
+
+angular can two way bind data from input to property by [(ngModel)] 
+ex: <input [(ngModel)]="hero.name">
+however (ngModel) is not available by default =>
+import {FormModule} from '@angular/form'; at appcomponent.ts
+
+5. in-app navigation
