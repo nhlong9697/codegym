@@ -40,3 +40,36 @@ however (ngModel) is not available by default =>
 import {FormModule} from '@angular/form'; at appcomponent.ts
 
 5. in-app navigation
+
+ng generate module app-routing --flat --module=app
+--flat puts the file in src/app instead of its own folder.
+--module=app tells the CLI to register it in the imports array of the AppModule.
+
+const routes is the list of routes for the app here you will declare which which route will use which component 
+ex: 
+in app.routing.module.ts you must import RouterModule and Router class from @'angular/router'
+const routes: Routes = [
+  {path: 'pathname', component:'Component_Name'}
+]
+
+@NgModule is a metadata that init the router and starts listen to change in browser
+imports add RouterModule for the AppRouterModule and configure the route with RouterModule.root(routes) 'routes' comes from the above declaration
+RouterModule call .root because we configuring the app at root level
+exports:[RouterModule to use throughout the app]
+
+To use the router add the <router-outlet></router-outlet> at app.component.html
+
+To add navigation link for the app use <a routerLink="/pathname"></a>
+
+now HeroDetailComponent must create a component in reponse to the url ~/detail/some_id => extract id from route
+=>acquire the hero with that id from server through service
+
+import {ActivatedRoute} helps takes information about the current route or info about the route of this specific component
+in this specifically we want the id  of the hero to display
+
+import {location} is an angular service to interact with the browser
+
+route.snapshot holds the routes information of the component after it is created
+paramMap create a dictionary of route parameter from the url
+
+location.back basically use the back button of the browser
