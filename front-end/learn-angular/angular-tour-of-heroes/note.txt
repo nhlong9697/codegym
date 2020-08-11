@@ -39,6 +39,57 @@ ex: <input [(ngModel)]="hero.name">
 however (ngModel) is not available by default =>
 import {FormModule} from '@angular/form'; at appcomponent.ts
 
+2.display  a list
+if a property is a list ex:heroes=hero_list;
+if you want to loop in li
+<li *ngFor="let hero of heroes"><span>{{hero.id}} {{hero.name}}</span></li>
+the above gets you id and name of each hero
+
+if you want to call a function  with an action
+(action)="function()"
+ex:(click)="onSelect(hero)"
+
+conditional statement is *ngIf
+for example
+<div *ngIf="1==2"></div>
+or <div *ngIf="selectedHero"></div> (if selectedHero is not null)
+
+angula class binding
+[class.some-css-class] = "conditional_statement"
+ex:[class.selected]="hero===selectedHero"
+
+3.create feature component
+you can have nested component to reduce code complexity and increase maintainability
+
+you can insert an object to a component  or property binding
+<component-detail [component]="selectedComponent"></component-detail>
+ex: <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+=> this is oneway data binding
+import @Input symbol to insert
+
+4.
+Service is a way to share data between component that dont know each other
+use angular DI to inject in to component
+
+@Injectable service
+import { Injectable } from '@angular/core'
+A service will be in DI system and provide injectable service and have its own injected dependency
+a service must be register in a provider
+a provider is something that can create or deliver a service (instantiate a service object)
+providedIn property of injectable register the the service in the specified module
+if set to root => access by any where in app
+
+get data is inherently an async operation => use observable => import { Observable, of } from 'rxjs';
+transform return data to observable by of(data)
+ex: return of(HEROES)
+
+get data from observable by subscribe method
+observable.subscribe(result => function(result));
+ex: this.heroService.getHeroes.subscribe(heroes => this.heroes = heroes);
+
+in order for service to use in template injected service must be set to public
+constructor(public messageService:MessageService) {}
+
 5. in-app navigation
 
 ng generate module app-routing --flat --module=app
@@ -74,6 +125,77 @@ paramMap create a dictionary of route parameter from the url
 
 location.back basically use the back button of the browser
 
+6.get data from server
+Make HttpClient available everywhere in the app in two steps. First, add it to the root AppModule by importing it:
+import { HttpClientModule } from '@angular/common/http';
+
+Next, still in the AppModule, add HttpClient to the imports array:
+@NgModule({
+  imports: [
+    HttpClientModule,
+  ],
+})
+
+/** GET heroes from the server */
+getHeroes(): Observable<Hero[]> {
+  return this.http.get<Hero[]>(this.heroesUrl)
+}
+
+All HttpClient methods return an RxJS Observable of something.
+The server's data API determines the shape of the JSON data.
+Other APIs may bury the data that you want within an object. 
+You might have to dig that data out by processing the Observable result with the RxJS map() operator.
+
+if there is error
+To catch errors, you "pipe" the observable result from http.get() through an RxJS catchError() operator.
+
+Import the catchError symbol from rxjs/operators, along with some other operators you'll need later.
+
+import { catchError, map, tap } from 'rxjs/operators';
+the return statement will catch error if any and retun empty array
+  return this.http.get<Hero[]>(this.heroesUrl)
+    .pipe(
+      catchError(this.handleError<Hero[]>('getHeroes', []))
+    );
+
+handleError() will be shared by many HeroService methods so it's generalized to meet their different needs.
+tap() operator, which looks at the observable values, does something with those values, and passes them along.
+The tap() call back doesn't touch the values themselves.
+The HeroService methods will tap into the flow of observable values and send a message
+
+The heroes web API expects a special header in HTTP save requests.
+That header is in the httpOptions constant defined in the HeroService. Add the following to the HeroService class.
+httpOptions = {
+  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+};
+
+AsyncPipe
+The *ngFor repeats hero objects. Notice that the *ngFor iterates over a list called heroes$, not heroes
+The $ is a convention that indicates heroes$ is an Observable, not an array.
+
+private searchTerms = new Subject<string>();
+
+// Push a search term into the observable stream.
+search(term: string): void {
+  this.searchTerms.next(term);
+}
+
+A Subject is both a source of observable values and an Observable itself. You can subscribe to a Subject as you would any Observable.
+
+You can also push values into that Observable by calling its next(value) method as the search() method does.
+
+debounceTime(300) waits until the flow of new string events pauses for 300 milliseconds before passing along the latest string. You'll never make requests more frequently than 300ms.
+
+distinctUntilChanged() ensures that a request is sent only if the filter text changed.
+
+switchMap() calls the search service for each search term that makes it through debounce() and distinctUntilChanged().
+It cancels and discards previous search observables, returning only the latest search service observable.
+
+switchMap() preserves the original request order while returning only the observable from the most recent HTTP method call.
+Results from prior calls are canceled and discarded.
+
+canceling a previous searchHeroes() Observable doesn't actually abort a pending HTTP request.
+Unwanted results are simply discarded before they reach your application code.
 
 func.call() = "give me one value synchronously"
 observable.subscribe()="give me any amount of value either sync or async"
