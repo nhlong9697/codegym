@@ -73,3 +73,7 @@ route.snapshot holds the routes information of the component after it is created
 paramMap create a dictionary of route parameter from the url
 
 location.back basically use the back button of the browser
+
+
+func.call() = "give me one value synchronously"
+observable.subscribe()="give me any amount of value either sync or async"
