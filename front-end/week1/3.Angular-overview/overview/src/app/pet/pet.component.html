@@ -1,0 +1,12 @@
+<h2>Pet profile</h2>
+<label>
+  <input type="text" [(ngModel)]="petName" (change)="updateName(petName)" />
+</label>
+<br />
+<label>
+  <input type="url" [(ngModel)]="petImage" (change)="updateImage(petImage)" />
+</label>
+<br />
+<h3>Pet name: {{ petName }}</h3>
+<p>Pet image: {{ petImage }}</p>
+<img [src]="petImage" style="max-width: 50%;" />
