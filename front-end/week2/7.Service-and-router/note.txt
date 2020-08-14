@@ -1,0 +1,28 @@
+can use children in side router to make subpath
+ex: 
+{
+  path: 'path',
+  component: FatherComponent,
+  children: [{
+    path: ':param',
+    component: ChildComponent
+  }]
+}
+
+get param from route 
+ const param;
+ this.sub = this.activatedRouter.paramMap.subscribe((paramMap: ParamMap) => {
+        param = paramMap.get('param');
+    });
+
+ how to find
+
+ export interface Student {
+   id:number,
+   name:string
+ }
+
+ find(id:number):student {
+   found = this.array.find((element) => element.id === id)
+   return found;
+ }
