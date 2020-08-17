@@ -1,0 +1,74 @@
+angular ngModule
+Angular is divided into modules called ngModule
+they can import functionality from other ngModule or export functionality to other ngModule
+
+each angular app have at least 1 module called AppModule in app.module.ts
+angular also divided its functionality into core modules such as RouterModule, HttpClientModule
+
+declarations:use to declare componets directive and pipes only
+
+import: other modules that this module needs to use
+
+exports:functionality that allows other module to use
+
+providers:when working with dependency injection we need to declare service for injector to inject dependency
+
+bootstrap: when defining ngModule we need to tell angular which view should be initialized(usually root module) 
+=>bootstrap is usually set at root NgModule
+
+//import other modules
+  imports: [BrowserModule, AppRoutingModule, ImageGalleryModule],
+
+SharedModule: this is the module that manage component pipe directive which is used in many other different module in application
+CoreModule:this is the module that declare providers use throughout the app with only one instance of service
+and core module is imported only once in root module
+FeatureModule:UI module, business logic module, routing module => most module is in this group
+
+to create module inside a path
+ng g c path/module_name
+
+content projection by adding ng-content directive into component
+=> there will be a base template for other other component to inject their template
+=> basically similar to @Input but it allows html content
+
+<ng-content></ng-content>
+
+<app-content>
+  <h3>html input</h3>
+</app-content>
+
+NgModule Providers
+when a class request a DI, DI system will find at injector tree or the providers. if it does not exists
+it will go up one level and find DI at parent
+If app.module has declare service in providers other sub module won't have to provide service anymore
+But app.component and component of submodule will use the same service
+
+<!--ng-content will not use AuthService from viewProviders of content.component 
+  but from app.component providers at app-component-->
+also app-child-component is added in app-component.html => use dependency from app.module
+
+
+if you declare a service at component a level => all child component (if not provide service again) will use same instance
+when there are 2 instance of component A there will be 2 instance of corresponding service
+to create module
+ng g module module_name
+
+to use the module we have to export the component that are going to be used in exports[] of the module
+add module in app module
+
+create injection token
+export const InjectionVariable = new InjectionToken<inject_value_type>('Name')
+
+to inject token
+constructor(
+  @Inject(InjectionVariable)
+  @Optional()
+  injectionValue:inject_value_type
+) {
+}
+
+to declare injection value
+in app.module
+providers: [
+  {provide: InjectionVariable, useValue:some_value_with_the_same_type_as_inject_value_type}
+]

@@ -1,0 +1,11 @@
+<h2>Content Projection</h2>
+<app-cp-card>
+  <!--content of app-cp-card which will replace <ng-content>-->
+  <h3>Card heading</h3>
+  <p>Card content</p>
+</app-cp-card>
+<p>Content projection AuthService: {{ authService.user }}</p>
+<!--ng-content will not use AuthService from viewProviders of content.component 
+  but from app.component providers at app-compoent-->
+<ng-content></ng-content>
+
