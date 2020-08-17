@@ -1,0 +1,18 @@
+create form 
+1.in ts
+input = new FormControl();
+2.in html
+[formControl]="input"
+
+set value of input 
+this.input.value('something')
+
+get value of input 
+this.input.value 
+
+logic 
+form builder group the property to login form
+
+
+
+
