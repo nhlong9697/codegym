@@ -1,0 +1,7 @@
+<div>
+  <div *ngFor="let art of articleService.articles">
+    <a href="{{ art.url }}" target="_blank">{{ art.title }}</a>
+    <likes></likes>
+  </div>
+</div>
+
